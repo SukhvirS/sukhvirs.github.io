@@ -34,14 +34,6 @@ const styles = {
     border:"60px solid white"
   },
 
-  footer:{
-    width:"100%",
-    textAlign:"center",
-    position:"absolute",
-    bottom:"0",
-    fontWeight:"160px"
-  }
-
 }
 
 export default Overview
