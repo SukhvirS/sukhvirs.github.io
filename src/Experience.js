@@ -9,7 +9,7 @@ class Experience extends React.Component{
         <div style={styles.backgroundImage}>
           <MyNavbar />
           <div style={{margin:"1em"}}>
-            <div style={{margin:"0 0 4em 0"}}>
+            <div style={{margin:"4em 0 4em 0"}}>
               <h1 style={{display:"flex", justifyContent:"center"}}>
                 Atom Payroll
               </h1>
@@ -18,7 +18,7 @@ class Experience extends React.Component{
                   A enterprise level payroll management application. Administrators can easily and quickly add, edit, and remove employees from the databse.
                 </p>
                 <p style={{display:"flex", justifyContent:"center"}}>
-                  Built using ReactJS for the front end and MongoDB for the backend <b style={{marginLeft:"5px"}}>github.com/shawnsuarez/cmpe172-atom</b>
+                  Built using ReactJS for the front end and MongoDB for the backend. <b style={{marginLeft:"5px"}}>github.com/shawnsuarez/cmpe172-atom</b>
                 </p>
               </div>
             </div>
