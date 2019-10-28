@@ -10,7 +10,7 @@ class Skills extends React.Component{
           <MyNavbar />
           <div>
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 1em 0"}}>
-              <div style={{width:"900px"}}>
+              <div style={{width:"900px", margin:"1em 0 0 0"}}>
                 <h1 style={{float:"left", margin:"0 120px"}}>General</h1>
                 <div style={{float:"right", width:"330px", textAlign:"left"}}>
                   <ul style={{listStyleType:"none", float:"left", fontSize:"20px", padding:"0"}}>
@@ -60,7 +60,7 @@ class Skills extends React.Component{
                       Javascript
                     </li>
                     <li>
-                      ReactJS
+                      React.js
                     </li>
                     <li>
                       Bootstrap
@@ -103,9 +103,6 @@ class Skills extends React.Component{
               </div>
             </div>
           </div>
-          <p style={{bottom:"0", right:"0", position:"absolute", fontSize:"12px", padding:"0 60px 0 0" }}>
-            Photo by Andre Benz
-          </p>
         </div>
       </div>
     )

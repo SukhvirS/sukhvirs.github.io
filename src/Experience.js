@@ -8,37 +8,67 @@ class Experience extends React.Component{
       <div style={{height:"100%"}}>
         <div>
           <MyNavbar />
-          <div style={{margin:"1em"}}>
-            <div style={{margin:"4em 0 4em 0"}}>
-              <h1 style={{display:"flex", justifyContent:"center"}}>
-                Atom Payroll
-              </h1>
-              <div style={{fontSize:"20px"}}>
-                <p style={{display:"flex", justifyContent:"center"}}>
-                  A enterprise level payroll management application. Administrators can easily and quickly add, edit, and remove employees from the databse.
-                </p>
-                <p style={{display:"flex", justifyContent:"center"}}>
-                  Built using ReactJS for the front end and MongoDB for the backend. <b style={{marginLeft:"5px"}}>github.com/shawnsuarez/cmpe172-atom</b>
-                </p>
+          <div>
+            <div style={{display:"flex", justifyContent:"center", margin:"4em 0 1em 0"}}>
+              <div style={{width:"1100px", margin:"1em 0 0 0"}}>
+                <div style={{float:"left"}}>
+                  <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left"}}>Coding Teacher</h1></li>
+                    <li><h4 style={{float:"left", color:"gray"}}>Code With Us</h4></li>
+                    <li><h4 style={{float:"left", color:"gray"}}>August 2019 - <i>present</i></h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"600px", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    I teach kids and teenagers how to code in Scratch, Python, Java, HTML, etc. at various aferschool programs in San Jose and the surrounding area.
+                  </p>
+                </div>
               </div>
             </div>
-            <div>
-              <h1 style={{display:"flex", justifyContent:"center"}}>
-                Chess AI
-              </h1>
-              <div style={{fontSize:"20px"}}>
-                <p style={{display:"flex", justifyContent:"center"}}>
-                  A chees engine skilled enough to beat the average player.
-                </p>
-                <p style={{display:"flex", justifyContent:"center"}}>
-                  Built using python with liches.org API for frontend and trained via reinforcement learning.
-                </p>
+            <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
+              <div style={{width:"1100px", margin:"1em 0 0 0"}}>
+                <div style={{float:"left"}}>
+                  <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left"}}>Front End Developer</h1></li>
+                    <li><h4 style={{float:"left", color:"gray"}}>Atom Payroll</h4></li>
+                    <li><h4 style={{float:"left", color:"gray"}}>January 2019 - May 2019</h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"600px", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    An employee management web application suitable for large companies. It offers useful functions such as add, delete, edit, sort, and search.
+                    We used React.js for frontend, MongoDB for backend, and Auth0 for user authentication.
+                    <br/>
+                    <a href="https://github.com/shawnsuarez/cmpe172-atom" alt="GitHub Link" target="_blank" style={{color:"gray"}}>
+                      github.com/shawnsuarez/cmpe172-atom
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
+              <div style={{width:"1100px", margin:"1em 0 0 0"}}>
+                <div style={{float:"left"}}>
+                  <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left"}}>Front End Developer</h1></li>
+                    <li><h4 style={{float:"left", color:"gray"}}>Saferway</h4></li>
+                    <li><h4 style={{float:"left", color:"gray"}}>January 2019 - May 2019</h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"600px", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    An online alternative to Safeway that allows users to buy groceries and common household items easily by search or sorting
+                    by categories. Users can create an account to save items in their shopping cart and view their purchase history.
+                    We used React.js for frontend and MongoDB for backend.
+                    <br/>
+                    <a href="https://github.com/dmilin1/SaferWay" alt="GitHub Link" target="_blank" style={{color:"gray"}}>
+                      github.com/dmilin1/SaferWay
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <p style={{bottom:"0", right:"0", position:"absolute", fontSize:"12px", padding:"0 60px 0 0" }}>
-            Photo by Scott Webb
-          </p>
         </div>
       </div>
     )

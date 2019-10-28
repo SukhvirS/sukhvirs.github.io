@@ -15,9 +15,6 @@ class Overview extends React.Component{
           <p style={{textAlign:"center", fontSize:"50px"}}>
             sukhvir23singh@gmail.com
           </p>
-          <p style={{bottom:"0", right:"0", position:"absolute", fontSize:"12px", padding:"0 60px 0 0" }}>
-            Photo by Andre Benz
-          </p>
         </div>
       </div>
     )
