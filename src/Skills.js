@@ -6,7 +6,7 @@ class Skills extends React.Component{
   render(){
     return(
       <div style={{height:"100%"}}>
-        <div style={styles.backgroundImage}>
+        <div>
           <MyNavbar />
           <div>
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 1em 0"}}>

@@ -6,7 +6,7 @@ class Overview extends React.Component{
   render(){
     return(
       <div style={{height:"100%"}}>
-        <div style={styles.backgroundImage}>
+        <div>
           <MyNavbar />
           <div style={{fontSize:"160px", textAlign:"center"}}>
             <p style={{height:"140px"}}>S U K H V I R</p>
@@ -26,7 +26,7 @@ class Overview extends React.Component{
 
 const styles = {
   backgroundImage: {
-    backgroundImage:"url('https://images.unsplash.com/photo-1492660372153-266c604c29c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')",
+    backgroundImage:"url('https://minimalissimo.com/cms/wp-content/uploads/2019/10/bergmeisterwolf_Aldranz_IMG_4457_GW.jpg')",
     height:"970px",
     backgroundPosition:"center",
     backgroundSize:"cover",

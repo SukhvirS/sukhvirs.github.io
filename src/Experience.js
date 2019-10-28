@@ -6,7 +6,7 @@ class Experience extends React.Component{
   render(){
     return(
       <div style={{height:"100%"}}>
-        <div style={styles.backgroundImage}>
+        <div>
           <MyNavbar />
           <div style={{margin:"1em"}}>
             <div style={{margin:"4em 0 4em 0"}}>
