@@ -47,9 +47,9 @@ function MyNavbar() {
           }>
           {
           theme.mode === 'light' ?
-          <img src="https://i.ibb.co/7nXDpCX/moon.png" alt="Dark Mode" width="30px"/>
+          <img src="https://i.ibb.co/7nXDpCX/moon.png" alt="Dark Mode" width="25px"/>
           :
-          <img src="https://i.ibb.co/54yRWHL/sunny-day.png" alt="Light Mode" width="30px" />
+          <img src="https://i.ibb.co/54yRWHL/sunny-day.png" alt="Light Mode" width="25px" />
           }
           </Link>
           <div style={{position:"absolute", right:"0", padding:"8px 60px"}}>

@@ -12,29 +12,31 @@ class Skills extends React.Component{
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 1em 0"}}>
               <div style={{width:"900px"}}>
                 <h1 style={{float:"left", margin:"0 120px"}}>General</h1>
-                <ul style={{listStyleType:"none", float:"right", fontSize:"20px"}}>
-                  <li>
-                    Public Speaking
-                  </li>
-                  <li>
-                    Agile & Waterfall Development
-                  </li>
-                  <li>
-                    Git
-                  </li>
-                  <li>
-                    Microsoft Office
-                  </li>
-                  <li>
-                    Fluent in English, Hindi, Punjabi
-                  </li>
-                </ul>
+                <div style={{float:"right", width:"330px", textAlign:"left"}}>
+                  <ul style={{listStyleType:"none", float:"left", fontSize:"20px", padding:"0"}}>
+                    <li>
+                      Public Speaking
+                    </li>
+                    <li>
+                      Fluent in English, Hindi, Punjabi
+                    </li>
+                    <li>
+                      Microsoft Office
+                    </li>
+                    <li>
+                      Agile & Waterfall Development
+                    </li>
+                    <li>
+                      Git
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div style={{width:"900px"}}>
                 <h1 style={{float:"left", margin:"0 120px"}}>Languages</h1>
-                <div style={{float:"right", width:"272px", textAlign:"left"}}>
+                <div style={{float:"right", width:"330px", textAlign:"left"}}>
                   <ul style={{listStyleType:"none", float:"left", fontSize:"20px", padding:"0"}}>
                     <li>
                       Java
@@ -49,7 +51,7 @@ class Skills extends React.Component{
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div style={{width:"900px"}}>
                 <h1 style={{float:"left", margin:"0 120px"}}>Front End</h1>
-                <div style={{float:"right", width:"272px", textAlign:"left"}}>
+                <div style={{float:"right", width:"330px", textAlign:"left"}}>
                   <ul style={{listStyleType:"none", float:"left", fontSize:"20px", padding:"0"}}>
                     <li>
                       HTML / CSS
@@ -73,28 +75,28 @@ class Skills extends React.Component{
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div style={{width:"900px"}}>
                 <h1 style={{float:"left", margin:"0 120px"}}>Data Science</h1>
-                <div style={{float:"right", width:"272px", textAlign:"left"}}>
+                <div style={{float:"right", width:"330px", textAlign:"left"}}>
                   <ul style={{listStyleType:"none", float:"left", fontSize:"20px", padding:"0"}}>
                     <li>
-                      MATLAB
+                      TensorFlow
                     </li>
                     <li>
-                      Linear Regression
+                      NumPy
                     </li>
                     <li>
-                      Logistic Regression
+                      Pandas
                     </li>
                     <li>
-                      SVM
+                      Keras
                     </li>
                     <li>
-                      K-means
+                      SciKit Learn
                     </li>
                     <li>
-                      PCA
+                      Matplotlib
                     </li>
                     <li>
-                      Deep Neural Networks
+                      Seaborn
                     </li>
                   </ul>
                 </div>
