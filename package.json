@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://sukhvirs.com/personal-website",
+  "homepage": "https://sukhvirs.com",
   "private": true,
   "dependencies": {
     "@emotion/styled": "^10.0.22",
