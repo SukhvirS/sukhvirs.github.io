@@ -40,7 +40,7 @@ class Experience extends React.Component{
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
                     An employee management web application suitable for large companies. It offers useful functions such as add, delete, edit, sort, and search.
-                    We used React.js for frontend, MongoDB for backend, and Auth0 for user authentication.
+                    We used React.js and Bootstrap for frontend, MongoDB for backend, and Auth0 for user authentication.
                     <br/>
                     <a href="https://github.com/shawnsuarez/cmpe172-atom" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
                       github.com/shawnsuarez/cmpe172-atom
@@ -62,7 +62,7 @@ class Experience extends React.Component{
                   <p style={{fontSize:"20px"}}>
                     An online alternative to Safeway that allows users to buy groceries and common household items easily by search or sorting
                     by categories. Users can create an account to save items in their shopping cart and view their purchase history.
-                    We used React.js for frontend and MongoDB for backend.
+                    We used React.js, Bootstrap, and SemanticUI for frontend and MongoDB for backend.
                     <br/>
                     <a href="https://github.com/dmilin1/SaferWay" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
                       github.com/dmilin1/SaferWay

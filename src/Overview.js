@@ -11,7 +11,7 @@ class Overview extends React.Component{
           <div style={{display:"flex", justifyContent:"center", marginTop:"40px"}}>
             <div style={{marginLeft:"10vw"}}>
               <div style={{float:"left"}}>
-                <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=954&q=80" alt="Profile"style={styles.imageStyle}/>
+                <img src="https://i.ibb.co/BZ3cbQf/image.png" alt="Profile" style={styles.imageStyle}/>
               </div>
             </div>
             <div style={{float:"left", margin:"40px 10vw 0 0"}}>

@@ -29,11 +29,11 @@ function MyNavbar() {
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light" style={{width:"80%", margin:"30px 8%"}}>
+        <div className="navbar navbar-expand navbar-light" style={{width:"80vw", margin:"30px 8%", gridFloatBreakpoint:"1600px"}}>
 
           {/* Navigatioin buttons*/}
           <div style={{position:"absolute", right:"0"}}>
-            <ul className="navbar-nav">
+            <ul className="nav navbar-nav">
 
               {/* Home */}
               <li className="nav-item" style={{margin:"0 .5em"}}>
@@ -81,7 +81,7 @@ function MyNavbar() {
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
 
         {/** Dark mode switch */}
         <div className="nav-item" style={{margin:"0 .5em", position:"fixed", right:"60px", bottom:"60px"}}>
