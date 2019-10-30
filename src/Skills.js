@@ -109,23 +109,4 @@ class Skills extends React.Component{
   }
 }
 
-const styles = {
-  backgroundImage: {
-    backgroundImage:"url('https://images.unsplash.com/photo-1492714673295-07efb43ddaf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')",
-    height:"970px",
-    backgroundPosition:"center",
-    backgroundSize:"cover",
-    backgroundRepeat:"no-repeat",
-    border:"60px solid white",
-  },
-
-  footer:{
-    width:"100%",
-    textAlign:"center",
-    position:"absolute",
-    bottom:"0",
-    fontWeight:"160px"
-  }
-}
-
 export default Skills

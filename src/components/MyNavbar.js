@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {ThemeProvider, createGlobalStyle} from 'styled-components';
 import storage from 'local-storage-fallback';
+import './NavbarStyles.css';
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -28,32 +29,28 @@ function MyNavbar() {
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
       <div>
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light" style={{padding:"8px 60px"}}>
-          {
-            window.location.href === "http://localhost:3000/" ?
-            <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
-              , outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
-              HOME
-            </Link>
-            :
-            <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'}}>
-              HOME
-           </Link>
-          }
-          <Link className='nav-link' onClick = {e =>
-            setTheme(
-              theme.mode === 'dark' ? {mode:'light'} : {mode:'dark'}
-            )
-          }>
-          {
-          theme.mode === 'light' ?
-          <img src="https://i.ibb.co/7nXDpCX/moon.png" alt="Dark Mode" width="25px"/>
-          :
-          <img src="https://i.ibb.co/54yRWHL/sunny-day.png" alt="Light Mode" width="25px" />
-          }
-          </Link>
-          <div style={{position:"absolute", right:"0", padding:"8px 60px"}}>
+        <nav className="navbar navbar-expand-lg navbar-light" style={{width:"80%", margin:"30px 8%"}}>
+
+          {/* Navigatioin buttons*/}
+          <div style={{position:"absolute", right:"0"}}>
             <ul className="navbar-nav">
+
+              {/* Home */}
+              <li className="nav-item" style={{margin:"0 .5em"}}>
+                {
+                  window.location.href === "http://localhost:3000/" ?
+                  <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
+                    , outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
+                    HOME
+                  </Link>
+                  :
+                  <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'}}>
+                    HOME
+                 </Link>
+                }
+              </li>
+
+              {/* Skills*/}
               <li className="nav-item" style={{margin:"0 .5em"}}>
                 {
                   window.location.href.indexOf("skills")> -1 ?
@@ -67,6 +64,8 @@ function MyNavbar() {
                   </Link>
                 }
               </li>
+
+              {/* Experience */}
               <li className="nav-item" style={{margin:"0 .5em"}}>
                 {
                   window.location.href.indexOf("experience") > -1 ?
@@ -80,20 +79,25 @@ function MyNavbar() {
                   </Link>
                 }
               </li>
-              <li className="nav-item" style={{margin:"0 .5em"}}>
-                {
-                  window.location.href.indexOf("about") > -1 ?
-                  <Link className="nav-link" to="/about" style={{color:theme.mode === 'light' ? 'black' : 'white',
-                   outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>ABOUT ME</Link>
-                  :
-                  <Link className="nav-link" to="/about" style={{color:theme.mode === 'light' ? 'black' : 'white'}}>
-                    ABOUT ME
-                  </Link>
-                }
-              </li>
             </ul>
           </div>
         </nav>
+
+        {/** Dark mode switch */}
+        <div className="nav-item" style={{margin:"0 .5em", position:"fixed", right:"60px", bottom:"60px"}}>
+          <Link className='nav-link' to="#" onClick = {e =>
+            setTheme(
+              theme.mode === 'dark' ? {mode:'light'} : {mode:'dark'}
+            )
+          }>
+            {
+            theme.mode === 'light' ?
+            <img src="https://i.ibb.co/7nXDpCX/moon.png" alt="Dark Mode" width="25px"/>
+            :
+            <img src="https://i.ibb.co/54yRWHL/sunny-day.png" alt="Light Mode" width="25px" />
+            }
+          </Link>
+        </div>
       </div>
     </ThemeProvider>
   );
