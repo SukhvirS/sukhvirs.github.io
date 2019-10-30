@@ -38,7 +38,7 @@ function MyNavbar() {
               {/* Home */}
               <li className="nav-item" style={{margin:"0 .5em"}}>
                 {
-                  window.location.href === "http://localhost:3000/" ?
+                  window.location.href === "http://localhost:3000/#/" ?
                   <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
                     , outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
                     HOME
