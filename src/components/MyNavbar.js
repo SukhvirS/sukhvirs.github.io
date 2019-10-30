@@ -41,11 +41,11 @@ function MyNavbar() {
                   window.location.href === "https://sukhvirs.com/#/" ?
                   <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
                     , outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
-                    HOME
+                    HOsdfME
                   </Link>
                   :
                   <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'}}>
-                    HOME
+                    HOsdfsdfME
                  </Link>
                 }
               </li>
