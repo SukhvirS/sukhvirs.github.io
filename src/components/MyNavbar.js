@@ -78,7 +78,7 @@ class MyNavbar extends React.Component{
 
                   <ul className="nav navbar-nav" className="menu">
                     {/* Home */}
-                    <li className="nav-item" style={{margin:"0 .5em"}}>
+                    <li className="nav-item" style={{margin:"0 0em"}}>
                       {
                         window.location.href === "https://sukhvirs.com/#/" ?
                         <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
@@ -92,7 +92,7 @@ class MyNavbar extends React.Component{
                     </li>
 
                     {/* Skills*/}
-                    <li className="nav-item" style={{margin:"0 .5em"}}>
+                    <li className="nav-item" style={{margin:"0 0em"}}>
                       {
                         window.location.href.indexOf("skills")> -1 ?
                         <Link className="nav-link" to="/skills" style={{color:theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
@@ -106,7 +106,7 @@ class MyNavbar extends React.Component{
                     </li>
 
                     {/* Experience */}
-                    <li className="nav-item" style={{margin:"0 .5em"}}>
+                    <li className="nav-item" style={{margin:"0 0em"}}>
                       {
                         window.location.href.indexOf("experience") > -1 ?
                         <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
@@ -121,7 +121,7 @@ class MyNavbar extends React.Component{
                   </ul>
                 </div>
               </header>
-              
+
             </ThemeProvider>
           </div>
           :
