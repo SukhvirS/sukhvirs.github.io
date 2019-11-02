@@ -11,7 +11,7 @@
 
 .header ul {
   margin: 0;
-  padding: 0;
+  padding: 0 0 60px 0;
   list-style: none;
   overflow: hidden;
 }
@@ -120,9 +120,6 @@
     display: none;
   }
 }
-
-
-
 
 
 .header .menu-icon-lightMode {

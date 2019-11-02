@@ -31,45 +31,44 @@ class Experience extends React.Component{
           {
             this.state.width < 750 ?
             <div>
-
-              <h4 style={{width:"95vw", margin:"1em 0 0 56px"}}>Work</h4>
+              <h4 style={{margin:"1em 0 0 2em"}}>Work</h4>
 
               <div style={{display:"flex", justifyContent:"center", margin:"10px 0 0 0"}}>
-                <div style={{width:"95vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseCodeWithUs">
-                  <div style={{float:"left", width:"60%"}}>
+                <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseCodeWithUs">
+                  <div style={{float:"left", margin:"0 0 0 0.5em", width:"50%"}}>
                     <ul style={{listStyleType:"none"}}>
                       <li><h1 style={{float:"left", width:"100%", fontSize:"4.5vw"}}>Coding Teacher</h1></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3.5vw"}}>Code With Us</h4></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3vw"}}>August 2019 - <i>present</i></h4></li>
                     </ul>
                   </div>
-                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"40px 40px 0 0"}}/>
+                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"0 3.5em 0 0"}}/>
                 </div>
               </div>
               <div>
-                <p style={{width:"85vw", margin:"0 0 0 56px", fontSize:"20px"}} className="collapse" id="collapseCodeWithUs">
+                <p style={{width:"85vw", margin:"0 0 0 2em", fontSize:"3.5vw"}} className="collapse" id="collapseCodeWithUs">
                   <br/>
                   I teach kids and teenagers how to code in Scratch, Python, Java, HTML, etc. at various aferschool programs in San Jose and the surrounding area.
                 </p>
               </div>
 
 
-              <h4 style={{width:"95vw", margin:"60px 0 0 56px"}}>School Projects</h4>
+              <h4 style={{margin:"2em 0 0 2em"}}>School Projects</h4>
 
               <div style={{display:"flex", justifyContent:"center", margin:"10px 0 0 0"}}>
-                <div style={{width:"95vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseAtomPayroll">
-                  <div style={{float:"left", width:"40%"}}>
+                <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseAtomPayroll">
+                  <div style={{float:"left", margin:"0 0 0 0.5em", width:"50%"}}>
                     <ul style={{listStyleType:"none"}}>
                       <li><h1 style={{float:"left", width:"100%", fontSize:"4.5vw"}}>Front End Developer</h1></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3.5vw"}}>Atom Payroll</h4></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3vw"}}>January 2019 - May 2019</h4></li>
                     </ul>
                   </div>
-                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"40px 40px 0 0"}}/>
+                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"0 3.5em 0 0"}}/>
                 </div>
               </div>
               <div>
-                <p style={{width:"85vw", margin:"0 0 0 56px", fontSize:"20px"}} className="collapse" id="collapseAtomPayroll">
+                <p style={{width:"85vw", margin:"0 0 0 2em", fontSize:"3.5vw"}} className="collapse" id="collapseAtomPayroll">
                   <br/>
                   An employee management web application suitable for large companies. It offers useful functions such as add, delete, edit, sort, and search.
                   We used React.js and Bootstrap for frontend, MongoDB for backend, and Auth0 for user authentication.
@@ -81,20 +80,20 @@ class Experience extends React.Component{
               </div>
 
 
-              <div style={{display:"flex", justifyContent:"center", margin:"1em 0 0 0"}}>
-                <div style={{width:"95vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseSaferway">
-                  <div style={{float:"left", width:"40%"}}>
+              <div style={{display:"flex", justifyContent:"center", margin:"10px 0 0 0"}}>
+                <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseSaferway">
+                  <div style={{float:"left", margin:"0 0 0 0.5em", width:"50%"}}>
                     <ul style={{listStyleType:"none"}}>
                       <li><h1 style={{float:"left", width:"100%", fontSize:"4.5vw"}}>Front End Developer</h1></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3.5vw"}}>Saferway</h4></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3vw"}}>January 2019 - May 2019</h4></li>
                     </ul>
                   </div>
-                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"40px 40px 0 0"}}/>
+                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"0 3.5em 0 0"}}/>
                 </div>
               </div>
               <div style={{margin:"0 0 8em 0"}}>
-                <p style={{width:"85vw", margin:"0 0 0 56px", fontSize:"20px"}} className="collapse" id="collapseSaferway">
+                <p style={{width:"85vw", margin:"0 0 0 2em", fontSize:"3.5em"}} className="collapse" id="collapseSaferway">
                   <br/>
                   An online alternative to Safeway that allows users to buy groceries and common household items easily by search or sorting
                   by categories. Users can create an account to save items in their shopping cart and view their purchase history.
