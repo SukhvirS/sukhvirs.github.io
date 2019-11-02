@@ -32,18 +32,18 @@ class Experience extends React.Component{
             this.state.width < 750 ?
             <div>
 
-              <h4 style={{width:"95vw", margin:"2em 0 0 56px"}}>Work</h4>
+              <h4 style={{width:"95vw", margin:"1em 0 0 56px"}}>Work</h4>
 
-              <div style={{display:"flex", justifyContent:"center", margin:"1em 0 0 0"}}>
+              <div style={{display:"flex", justifyContent:"center", margin:"10px 0 0 0"}}>
                 <div style={{width:"95vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseCodeWithUs">
-                  <div style={{float:"left"}}>
+                  <div style={{float:"left", width:"60%"}}>
                     <ul style={{listStyleType:"none"}}>
-                      <li><h1 style={{float:"left", width:"100%"}}>Coding Teacher</h1></li>
-                      <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Code With Us</h4></li>
-                      <li><h4 style={{float:"left", color:"gray", width:"100%"}}>August 2019 - <i>present</i></h4></li>
+                      <li><h1 style={{float:"left", width:"100%", fontSize:"4.5vw"}}>Coding Teacher</h1></li>
+                      <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3.5vw"}}>Code With Us</h4></li>
+                      <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3vw"}}>August 2019 - <i>present</i></h4></li>
                     </ul>
                   </div>
-                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="40px" style={{float:"right", margin:"50px 40px 0 0"}}/>
+                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"40px 40px 0 0"}}/>
                 </div>
               </div>
               <div>
@@ -56,16 +56,16 @@ class Experience extends React.Component{
 
               <h4 style={{width:"95vw", margin:"60px 0 0 56px"}}>School Projects</h4>
 
-              <div style={{display:"flex", justifyContent:"center", margin:"1em 0 0 0"}}>
+              <div style={{display:"flex", justifyContent:"center", margin:"10px 0 0 0"}}>
                 <div style={{width:"95vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseAtomPayroll">
                   <div style={{float:"left", width:"40%"}}>
                     <ul style={{listStyleType:"none"}}>
-                      <li><h1 style={{float:"left", width:"100%"}}>Front End Developer</h1></li>
-                      <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Atom Payroll</h4></li>
-                      <li><h4 style={{float:"left", color:"gray", width:"100%"}}>January 2019 - May 2019</h4></li>
+                      <li><h1 style={{float:"left", width:"100%", fontSize:"4.5vw"}}>Front End Developer</h1></li>
+                      <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3.5vw"}}>Atom Payroll</h4></li>
+                      <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3vw"}}>January 2019 - May 2019</h4></li>
                     </ul>
                   </div>
-                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="40px" style={{float:"right", margin:"50px 40px 0 0"}}/>
+                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"40px 40px 0 0"}}/>
                 </div>
               </div>
               <div>
@@ -85,12 +85,12 @@ class Experience extends React.Component{
                 <div style={{width:"95vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseSaferway">
                   <div style={{float:"left", width:"40%"}}>
                     <ul style={{listStyleType:"none"}}>
-                      <li><h1 style={{float:"left", width:"100%"}}>Front End Developer</h1></li>
-                      <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Saferway</h4></li>
-                      <li><h4 style={{float:"left", color:"gray", width:"100%"}}>January 2019 - May 2019</h4></li>
+                      <li><h1 style={{float:"left", width:"100%", fontSize:"4.5vw"}}>Front End Developer</h1></li>
+                      <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3.5vw"}}>Saferway</h4></li>
+                      <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"3vw"}}>January 2019 - May 2019</h4></li>
                     </ul>
                   </div>
-                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="40px" style={{float:"right", margin:"50px 40px 0 0"}}/>
+                  <img src="https://i.ibb.co/SKFjtTp/next.png" alt="Down Arrow" width="30px" style={{float:"right", margin:"40px 40px 0 0"}}/>
                 </div>
               </div>
               <div style={{margin:"0 0 8em 0"}}>
@@ -131,7 +131,7 @@ class Experience extends React.Component{
                   <h4 style={{width:"80%", margin:"16px 0 16px 40px"}}>School Projects</h4>
                   <div style={{float:"left", width:"40%"}}>
                     <ul style={{listStyleType:"none"}}>
-                      <li><h1 style={{float:"left", width:"100%"}}>Front End Developer</h1></li>
+                      <li><h1 style={{float:"left", width:"100%", fontSize:"3vw"}}>Front End Developer</h1></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Atom Payroll</h4></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%"}}>January 2019 - May 2019</h4></li>
                     </ul>
@@ -151,7 +151,7 @@ class Experience extends React.Component{
 
               <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
                 <div style={{width:"80%", margin:"1em 0 0 0"}}>
-                  <div style={{float:"left", width:"40%"}}>
+                  <div style={{float:"left", width:"40%", fontSize:"3vw"}}>
                     <ul style={{listStyleType:"none"}}>
                       <li><h1 style={{float:"left", width:"100%"}}>Front End Developer</h1></li>
                       <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Saferway</h4></li>
