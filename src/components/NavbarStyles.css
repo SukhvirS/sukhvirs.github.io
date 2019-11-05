@@ -2,7 +2,7 @@
 /* header */
 
 .header {
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1);
   width: 100%;
   z-index: 3;
   top: 0;
@@ -45,7 +45,7 @@
 .header .menu-icon-darkMode {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  float: left;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -113,7 +113,7 @@
   }
   .header .menu {
     clear: none;
-    float: right;
+    float: left;
     max-height: none;
   }
   .header .menu-icon-darkMode {
@@ -125,7 +125,7 @@
 .header .menu-icon-lightMode {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  float: left;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -193,7 +193,7 @@
   }
   .header .menu {
     clear: none;
-    float: right;
+    float: left;
     max-height: none;
   }
   .header .menu-icon-lightMode {

@@ -1,13 +1,90 @@
 import React from 'react';
 
 import MyNavbar from './components/MyNavbar';
+import './skills.css';
 
 class Skills extends React.Component{
+
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   render(){
     return(
       <div style={{height:"100%"}}>
-        <div>
-          <MyNavbar />
+        <MyNavbar />
+        {
+          this.state.width < 750?
+          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em"}}>
+
+            <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
+              <h4 style={{fontSize:"6vw"}}>General</h4>
+              <ul className="mobileUL" style={{float:"left"}}>
+                <li>Public Speaking</li>
+                <li>Microsoft Office</li>
+                <li>Git</li>
+              </ul>
+              <ul className="mobileUL" style={{float:"right"}}>
+                <li>Agile Development</li>
+                <li>Waterfall Development</li>
+              </ul>
+            </div>
+
+            <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
+              <h4 style={{fontSize:"6vw"}}>Languages</h4>
+              <ul className="mobileUL" style={{float:"left"}}>
+                <li>Java</li>
+              </ul>
+              <ul className="mobileUL" style={{float:"right"}}>
+                <li>Python</li>
+              </ul>
+            </div>
+
+            <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
+              <h4 style={{fontSize:"6vw"}}>Front End</h4>
+              <ul className="mobileUL" style={{float:"left"}}>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <ul className="mobileUL" style={{float:"right"}}>
+                <li>React.js</li>
+                <li>Bootstrap</li>
+                <li>Semantic UI</li>
+              </ul>
+            </div>
+
+            <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
+              <h4 style={{fontSize:"6vw"}}>Data Science</h4>
+              <ul className="mobileUL" style={{float:"left"}}>
+                <li>TensorFlow</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>Keras</li>
+              </ul>
+              <ul className="mobileUL" style={{float:"right"}}>
+                <li>SciKit Learn</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+              </ul>
+            </div>
+          </div>
+          :
           <div>
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 1em 0"}}>
               <div style={{width:"900px", margin:"1em 0 0 0"}}>
@@ -103,7 +180,7 @@ class Skills extends React.Component{
               </div>
             </div>
           </div>
-        </div>
+        }
       </div>
     )
   }

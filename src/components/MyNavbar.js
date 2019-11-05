@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import {ThemeProvider, createGlobalStyle} from 'styled-components';
 import storage from 'local-storage-fallback';
 import './NavbarStyles.css';
+import sun from '../resources/images/sunny-day.png';
+import moon from '../resources/images/moon.png';
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -47,27 +49,27 @@ class MyNavbar extends React.Component{
             <ThemeProvider theme={theme}>
               <GlobalStyle/>
 
-              <header className="header" display="flex">
+              <header className="header">
                 {/** Dark mode switch */}
-                <div style={{float:"left", margin:"0.5em 0 0 2.5em"}}>
+                <div style={{float:"right", margin:"0.5em 2.5em 0 0"}}>
                   {
                     theme.mode === 'dark'?
                     <Link className='nav-link' to="#" onClick = {e =>
                       storage.setItem('theme', JSON.stringify({mode:'light'}))
                     }>
-                      <img src="https://i.ibb.co/54yRWHL/sunny-day.png" alt="Light Mode" width="25px" />
+                      <img src={sun} alt="Light Mode" width="25px" />
                     </Link>
                     :
                     <Link className='nav-link' to="#" onClick = {e =>
                       storage.setItem('theme', JSON.stringify({mode:'dark'}))
                     }>
-                      <img src="https://i.ibb.co/7nXDpCX/moon.png" alt="Dark Mode" width="25px"/>
+                      <img src={moon} alt="Dark Mode" width="25px"/>
                     </Link>
                   }
                 </div>
 
                 {/* drop down menu*/}
-                <div style={{padding:"0 2.5em 0 0"}}>
+                <div style={{padding:"0 2.5em 0 1.5em"}}>
                   <input className="menu-btn" type="checkbox" id="menu-btn" />
                   {
                     theme.mode === 'dark'?
@@ -76,45 +78,45 @@ class MyNavbar extends React.Component{
                     <label className="menu-icon-lightMode" htmlFor="menu-btn"><span className="navicon"></span></label>
                   }
 
-                  <ul className="nav navbar-nav" className="menu">
+                  <ul  className="menu">
                     {/* Home */}
-                    <li className="nav-item" style={{margin:"0 0em"}}>
+                    <li style={{marginLeft:"-1.5em"}}>
                       {
                         window.location.href === "https://sukhvirs.com/#/" ?
-                        <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
-                          <b>H O M E</b>
+                        <Link to="/" style={{color: theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
+                          H O M E
                         </Link>
                         :
-                        <Link className="nav-link" to="/" style={{color: "gray", margin:"0 0 0 48px"}}>
-                          <b>H O M E</b>
+                        <Link to="/" style={{color: "gray", margin:"0 0 0 48px"}}>
+                          H O M E
                        </Link>
                       }
                     </li>
 
                     {/* Skills*/}
-                    <li className="nav-item" style={{margin:"0 0em"}}>
+                    <li style={{marginLeft:"-1.5em"}}>
                       {
                         window.location.href.indexOf("skills")> -1 ?
                         <Link className="nav-link" to="/skills" style={{color:theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
-                          <b>S K I L L S</b>
+                          S K I L L S
                         </Link>
                         :
                         <Link className="nav-link" to="/skills" style={{color:"gray", margin:"0 0 0 48px"}}>
-                          <b>S K I L L S</b>
+                          S K I L L S
                         </Link>
                       }
                     </li>
 
                     {/* Experience */}
-                    <li className="nav-item" style={{margin:"0 0em"}}>
+                    <li style={{marginLeft:"-1.5em"}}>
                       {
                         window.location.href.indexOf("experience") > -1 ?
                         <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
-                            <b>E X P E R I E N C E</b>
+                            E X P E R I E N C E
                         </Link>
                         :
                         <Link className="nav-link" to="/experience" style={{color:"gray", margin:"0 0 0 48px"}}>
-                          <b>E X P E R I E N C E</b>
+                          E X P E R I E N C E
                         </Link>
                       }
                     </li>
@@ -190,13 +192,13 @@ class MyNavbar extends React.Component{
                     <Link className='nav-link' to="#" onClick = {e =>
                       storage.setItem('theme', JSON.stringify({mode:'light'}))
                     }>
-                      <img src="https://i.ibb.co/54yRWHL/sunny-day.png" alt="Light Mode" width="25px" />
+                      <img src={sun} alt="Light Mode" width="25px" />
                     </Link>
                     :
                     <Link className='nav-link' to="#" onClick = {e =>
                       storage.setItem('theme', JSON.stringify({mode:'dark'}))
                     }>
-                      <img src="https://i.ibb.co/7nXDpCX/moon.png" alt="Dark Mode" width="25px"/>
+                      <img src={moon} alt="Dark Mode" width="25px"/>
                     </Link>
                   }
                 </div>

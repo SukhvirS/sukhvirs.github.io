@@ -1,0 +1,22 @@
+.carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+  background-image: url('./resources/images/back.png');
+}
+
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: url('./resources/images/next.png');
+}
+
+.carousel-inner img {
+  padding-bottom: 45px;
+}
+
+.carousel-indicators li {
+    background-color: #a3a3a3;
+}
+.carousel-indicators .active {
+    background-color: #999999;
+}

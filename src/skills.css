@@ -1,0 +1,10 @@
+.mobileUL {
+  list-style-type: none;
+  padding-left:0;
+  width:50%;
+}
+
+.mobileUL li {
+  font-size: 4vw;
+  color: gray
+}
