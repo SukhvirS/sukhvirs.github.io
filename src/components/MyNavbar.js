@@ -158,7 +158,7 @@ class MyNavbar extends React.Component{
                       {/* Home */}
                       <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
-                          window.location.href === "https://sukhvirs.com/#/" ?
+                          window.location.href === "https://sukhvirs.com/" ?
                           <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
                             , outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
                             HOME
