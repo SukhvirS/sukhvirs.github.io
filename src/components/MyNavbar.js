@@ -42,7 +42,7 @@ class MyNavbar extends React.Component{
   render(){
     const theme = this.getInitialTheme();
     return(
-      <div>
+      <div style={{fontFamily:"Karla"}}>
         {
           this.state.width < 750 ?
           <div>
@@ -133,6 +133,24 @@ class MyNavbar extends React.Component{
               <div>
                 <div className="navbar navbar-expand navbar-light" style={{width:"80vw", margin:"30px 8%", gridFloatBreakpoint:"1600px"}}>
 
+                {/** Dark mode switch */}
+                <div className="nav-item" style={{marginLeft:"2.7em"}}>
+                  {
+                    theme.mode === 'dark'?
+                    <Link className='nav-link' to="#" onClick = {e =>
+                      storage.setItem('theme', JSON.stringify({mode:'light'}))
+                    }>
+                      <img src={sun} alt="Light Mode" width="25px" />
+                    </Link>
+                    :
+                    <Link className='nav-link' to="#" onClick = {e =>
+                      storage.setItem('theme', JSON.stringify({mode:'dark'}))
+                    }>
+                      <img src={moon} alt="Dark Mode" width="25px"/>
+                    </Link>
+                  }
+                </div>
+
                   {/* Navigatioin buttons*/}
                   <div style={{position:"absolute", right:"0"}}>
                     <ul className="nav navbar-nav">
@@ -185,23 +203,6 @@ class MyNavbar extends React.Component{
                   </div>
                 </div>
 
-                {/** Dark mode switch */}
-                <div className="nav-item" style={{margin:"0 .5em", position:"fixed", right:"60px", bottom:"60px"}}>
-                  {
-                    theme.mode === 'dark'?
-                    <Link className='nav-link' to="#" onClick = {e =>
-                      storage.setItem('theme', JSON.stringify({mode:'light'}))
-                    }>
-                      <img src={sun} alt="Light Mode" width="25px" />
-                    </Link>
-                    :
-                    <Link className='nav-link' to="#" onClick = {e =>
-                      storage.setItem('theme', JSON.stringify({mode:'dark'}))
-                    }>
-                      <img src={moon} alt="Dark Mode" width="25px"/>
-                    </Link>
-                  }
-                </div>
               </div>
             </ThemeProvider>
           </div>

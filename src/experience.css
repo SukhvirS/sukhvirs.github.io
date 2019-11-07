@@ -1,12 +1,12 @@
 .carousel-control-prev-icon {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 80px;
   background-image: url('./resources/images/back.png');
 }
 
 .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 80px;
   background-image: url('./resources/images/next.png');
 }
 

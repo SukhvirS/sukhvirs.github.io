@@ -26,20 +26,25 @@ class Overview extends React.Component{
 
   render(){
     return(
-      <div>
+      <div style={{fontFamily:"Karla"}}>
         <MyNavbar />
         {
           this.state.width < 750 ?
           <div style={{paddingLeft:"2.7em", paddingRight:"3.5em"}}>
-            <div style={{width:"100%", paddingBottom:"1em"}}>
-              <p style={{fontSize:"12vw", textAlign:"center"}}>
-                S U K H V I R
+            <div style={{width:"100%", paddingBottom:"1em", marginTop:"15vh"}}>
+              <p style={{fontSize:"12vw", textAlign:"center", marginBottom:"-0.5em"}}>
+                SUKHVIR
               </p>
               <p style={{fontSize:"12vw", textAlign:"center"}}>
-                S I N G H
+                SINGH
               </p>
             </div>
 
+            <div>
+              <p style={{fontSize:"6vw", textAlign:"center", color:"gray"}}>sukhvir23singh@gmail.com</p>
+            </div>
+
+            {/*
             <div style={{paddingBottom:"2em"}}>
               <img src={profileImage} alt="Profile" style={{width:"100%", paddingRight:"0"}}/>
             </div>
@@ -49,20 +54,25 @@ class Overview extends React.Component{
               Software Engineering student at San Jose State University interested in software UI and machine learning.
               </p>
             </div>
+            */}
           </div>
           :
-          <div style={{display:"flex", justifyContent:"center", marginTop:"40px"}}>
+          <div>
+          {/*
             <div style={{marginLeft:"10vw"}}>
               <div style={{float:"left"}}>
                 <img src={profileImage} alt="Profile" style={styles.imageStyle}/>
               </div>
             </div>
-            <div style={{float:"left", margin:"40px 10vw 0 0"}}>
-              <p style={{fontSize:"60px", marginBottom:"-.40em"}}>Sukhvir</p>
-              <p style={{fontSize:"60px"}}>Singh</p>
+          */}
+            <div style={{textAlign:"center", verticalAlign:"middle"}}>
+              <p style={{fontSize:"6vw", marginTop:"20vh", marginBottom:"-0.25em"}}>SUKHVIR SINGH</p>
+              <p style={{fontSize:"4vw", color:"gray"}}>sukhvir23singh@gmail.com</p>
+              {/*
               <p style={{fontSize:"3vw"}}>
                 Software Engineering student at San Jose State University interested in software UI and machine learning.
               </p>
+              */}
             </div>
           </div>
         }

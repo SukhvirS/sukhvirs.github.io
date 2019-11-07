@@ -26,7 +26,7 @@ class Skills extends React.Component{
 
   render(){
     return(
-      <div style={{height:"100%"}}>
+      <div style={{fontFamily:"Karla"}}>
         <MyNavbar />
         {
           this.state.width < 750?
