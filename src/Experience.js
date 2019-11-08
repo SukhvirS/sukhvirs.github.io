@@ -71,7 +71,7 @@ class Experience extends React.Component{
         <MyNavbar />
         {
           this.state.width < 750 ?
-          <div style={{padding:"0 3.5em 2em 2.7em"}}>
+          <div style={{padding:"0 3.5em 2em 2.7em", marginTop:"100px"}}>
             <h4 style={{margin:"1em 0 0 0"}}>Work</h4>
 
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
@@ -136,9 +136,9 @@ class Experience extends React.Component{
                     <li data-target="#atomIndicators" data-slide-to="6"></li>
                   </ol>
                   <br/>
-                  <div className="carousel-inner">
+                  <div className="carousel-inner" style={{zIndex:"0"}}>
                     <div className="carousel-item active">
-                      <img src={atom1} className="d-block w-100" alt="Landing Page"/>
+                      <img src={atom1} className="d-block w-100" style={{zIndex:"0"}} alt="Landing Page"/>
                     </div>
                     <div className="carousel-item">
                       <img src={atom2} className="d-block w-100" alt="Login"/>

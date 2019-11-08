@@ -30,7 +30,7 @@ class Skills extends React.Component{
         <MyNavbar />
         {
           this.state.width < 750?
-          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em"}}>
+          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
               <h4 style={{fontSize:"6vw"}}>General</h4>

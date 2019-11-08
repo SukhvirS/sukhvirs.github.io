@@ -30,7 +30,7 @@ class Overview extends React.Component{
         <MyNavbar />
         {
           this.state.width < 750 ?
-          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em"}}>
+          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
             <div style={{width:"100%", paddingBottom:"1em", marginTop:"15vh"}}>
               <p style={{fontSize:"12vw", textAlign:"center", marginBottom:"-0.5em"}}>
                 SUKHVIR
