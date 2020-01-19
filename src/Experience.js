@@ -14,6 +14,7 @@ import atom4 from './resources/images/atom_payroll/atom4.png';
 import atom5 from './resources/images/atom_payroll/atom5.png';
 import atom6 from './resources/images/atom_payroll/atom6.png';
 import atom7 from './resources/images/atom_payroll/atom7.png';
+import chess from './resources/images/chess/main.png';
 
 import './experience.css';
 
@@ -80,7 +81,7 @@ class Experience extends React.Component{
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Coding Teacher</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Code With Us</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>August 2019 - <i>present</i></h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Aug 2019 - <i>present</i></h4></li>
                   </ul>
                 </div>
                 {
@@ -101,12 +102,43 @@ class Experience extends React.Component{
             <h4 style={{margin:"2em 0 0 0"}}>School Projects</h4>
 
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
+              <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseChess" onClick={this.toggleAtomCollapse} >
+                <div style={{float:"left", width:"60%"}}>
+                  <ul style={{listStyleType:"none", padding:"0"}}>
+                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Chess AI</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Python Developer</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jan 2019 - Dec 2019</h4></li>
+                  </ul>
+                </div>
+                {
+                  this.state.atomCollapseOpen ?
+                  <img src={up} alt="Up" width="30px" style={{float:"right"}}/>
+                  :
+                  <img src={down} alt="Down" width="30px" style={{float:"right"}}/>
+                }
+              </div>
+            </div>
+            <div>
+              <div style={{fontSize:"4vw"}} className="collapse" id="collapseChess">
+                <hr style={{borderTop:"1px solid #aaa"}}/>
+                  An AI capable enough to beat the average chess player. Our model was built using Convolutional Neural Networks and trained
+                  on thousands of high level human Chess games.<br/>
+                <a href="https://github.com/dmilin1/BishopAI" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
+                  https://github.com/dmilin1/BishopAI
+                </a>
+                <img src={chess} alt="Chess AI" width="100%"/>
+                <br/>
+                <br/>
+              </div>
+            </div>
+
+            <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseAtomPayroll" onClick={this.toggleAtomCollapse} >
                 <div style={{float:"left", width:"60%"}}>
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Atom Payroll</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Front End Developer</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>January 2019 - May 2019</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jan 2019 - May 2019</h4></li>
                   </ul>
                 </div>
                 {
@@ -180,7 +212,7 @@ class Experience extends React.Component{
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Saferway</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Front End Developer</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>January 2019 - May 2019</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jan 2019 - May 2019</h4></li>
                   </ul>
                 </div>
                 {
@@ -242,11 +274,12 @@ class Experience extends React.Component{
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0 1em 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <h4 style={{width:"80%", margin:"28px 0 16px 40px"}}>Work</h4>
+
                 <div style={{float:"left", width:"40%"}}>
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Coding Teacher</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Code With Us</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>August 2019 - <i>present</i></h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Aug 2019 - <i>present</i></h4></li>
                   </ul>
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
@@ -262,9 +295,34 @@ class Experience extends React.Component{
                 <h4 style={{width:"80%", margin:"16px 0 16px 40px"}}>School Projects</h4>
                 <div style={{float:"left", width:"40%"}}>
                   <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left", width:"100%"}}>Chess AI</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Python Developer</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2019 - Dec 2019</h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"56%", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    An AI capable enough to beat the average chess player. Our model was built using Convolutional Neural Networks and trained
+                    on thousands of high level human Chess games.
+                    <br/>
+                    <a href="https://github.com/dmilin1/BishopAI" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
+                      https://github.com/dmilin1/BishopAI
+                    </a>
+                  </p>
+                  <img src={chess} width="100%" alt="Chess AI"/>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
+              <div style={{width:"80%", margin:"1em 0 0 0"}}>
+                <div style={{float:"left", width:"40%", fontSize:"3vw"}}>
+                  <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Atom Payroll</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Front End Developer</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>January 2019 - May 2019</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2019 - May 2019</h4></li>
                   </ul>
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
@@ -329,7 +387,7 @@ class Experience extends React.Component{
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Saferwary</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Front End Developer</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>January 2019 - May 2019</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2019 - May 2019</h4></li>
                   </ul>
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>

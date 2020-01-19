@@ -41,8 +41,12 @@ class Overview extends React.Component{
             </div>
 
             <div>
-              <p style={{fontSize:"6vw", textAlign:"center", color:"gray"}}>sukhvir23singh@gmail.com</p>
+              <p style={{fontSize:"6vw", textAlign:"center"}}>sukhvir23singh@gmail.com</p>
             </div>
+
+            <p style={{fontSize:"3vw", textAlign:"center", fontSize:"5vw", padding:"1em 2em 0 2em", color:"gray"}}>
+              I'm a Software Engineering student at San Jose State University interested in software UI and Machine Learning.
+            </p>
 
             {/*
             <div style={{paddingBottom:"2em"}}>
@@ -66,13 +70,13 @@ class Overview extends React.Component{
             </div>
           */}
             <div style={{textAlign:"center", verticalAlign:"middle"}}>
-              <p style={{fontSize:"6vw", marginTop:"20vh", marginBottom:"-0.25em"}}>SUKHVIR SINGH</p>
-              <p style={{fontSize:"4vw", color:"gray"}}>sukhvir23singh@gmail.com</p>
-              {/*
-              <p style={{fontSize:"3vw"}}>
-                Software Engineering student at San Jose State University interested in software UI and machine learning.
+              <p style={{fontSize:"6vw", marginTop:"10vh", marginBottom:"-0.25em"}}>SUKHVIR SINGH</p>
+              <p style={{fontSize:"4vw"}}>sukhvir23singh@gmail.com</p>
+
+              <p style={{fontSize:"3vw", padding:"1em 2em 0 2em", color:"gray"}}>
+                I'm a Software Engineering student at San Jose State University interested in software UI and Machine Learning.
               </p>
-              */}
+
             </div>
           </div>
         }
