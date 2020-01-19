@@ -28,11 +28,13 @@ class Experience extends React.Component{
       teacherCollapseOpen: false,
       atomCollapseOpen: false,
       saferwayCollapseOpen: false,
+      chessCollapseOpen: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.toggleTeacherCollapse = this.toggleTeacherCollapse.bind(this);
     this.toggleAtomCollapse = this.toggleAtomCollapse.bind(this);
     this.toggleSaferwayCollapse = this.toggleSaferwayCollapse.bind(this);
+    this.toggleChessCollapse = this.toggleChessCollapse.bind(this);
   }
 
   componentDidMount() {
@@ -51,6 +53,12 @@ class Experience extends React.Component{
   toggleTeacherCollapse(){
     this.setState({
       teacherCollapseOpen: !this.state.teacherCollapseOpen
+    });
+  }
+
+  toggleChessCollapse(){
+    this.setState({
+      chessCollapseOpen: !this.state.chessCollapseOpen
     });
   }
 
@@ -102,7 +110,7 @@ class Experience extends React.Component{
             <h4 style={{margin:"2em 0 0 0"}}>School Projects</h4>
 
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
-              <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseChess" onClick={this.toggleAtomCollapse} >
+              <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseChess" onClick={this.toggleChessCollapse} >
                 <div style={{float:"left", width:"60%"}}>
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Chess AI</h1></li>
@@ -111,7 +119,7 @@ class Experience extends React.Component{
                   </ul>
                 </div>
                 {
-                  this.state.atomCollapseOpen ?
+                  this.state.chessCollapseOpen ?
                   <img src={up} alt="Up" width="30px" style={{float:"right"}}/>
                   :
                   <img src={down} alt="Down" width="30px" style={{float:"right"}}/>
