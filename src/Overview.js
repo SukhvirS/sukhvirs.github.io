@@ -45,7 +45,8 @@ class Overview extends React.Component{
             </div>
 
             <p style={{fontSize:"3vw", textAlign:"center", fontSize:"5vw", padding:"1em 2em 0 2em", color:"gray"}}>
-              I'm a Software Engineering student at San Jose State University interested in software UI and Machine Learning.
+              I'm a Software Engineering student at San Jose State University currently pursuing a
+              Master's Degree in Data Science.
             </p>
 
             {/*
@@ -74,7 +75,8 @@ class Overview extends React.Component{
               <p style={{fontSize:"4vw"}}>sukhvir23singh@gmail.com</p>
 
               <p style={{fontSize:"3vw", padding:"1em 2em 0 2em", color:"gray"}}>
-                I'm a Software Engineering student at San Jose State University interested in software UI and Machine Learning.
+                I'm a Software Engineering student at San Jose State University currently pursuing a
+                Master's Degree in Data Science.
               </p>
 
             </div>
