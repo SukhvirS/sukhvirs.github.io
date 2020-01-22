@@ -393,7 +393,7 @@ class Experience extends React.Component{
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <div style={{float:"left", width:"40%", fontSize:"3vw"}}>
                   <ul style={{listStyleType:"none"}}>
-                    <li><h1 style={{float:"left", width:"100%"}}>Saferwary</h1></li>
+                    <li><h1 style={{float:"left", width:"100%"}}>Saferway</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Front End Developer</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2019 - May 2019</h4></li>
                   </ul>
