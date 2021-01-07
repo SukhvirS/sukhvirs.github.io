@@ -218,10 +218,10 @@ class MyNavbar extends React.Component{
             <ThemeProvider theme={theme}>
               <GlobalStyle/>
               <div>
-                <div className="navbar navbar-expand navbar-light" style={{width:"80vw", margin:"30px 8%", gridFloatBreakpoint:"1600px"}}>
+                <div className="navbar navbar-expand navbar-light" style={{width:"80vw", margin:"30px auto", gridFloatBreakpoint:"1600px"}}>
 
                   {/** Dark mode switch */}
-                  <div className="nav-item" style={{marginLeft:"2.7em"}}>
+                  <div className="nav-item" style={{}}>
                     {
                       theme.mode === 'dark'?
                       <Link className='nav-link' to="#" onClick = {e =>
