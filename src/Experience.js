@@ -32,6 +32,7 @@ class Experience extends React.Component{
       researchCollapseOpen: false,
       yelpRecommenderOpen: false,
     };
+    
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.toggleTeacherCollapse = this.toggleTeacherCollapse.bind(this);
     this.toggleAtomCollapse = this.toggleAtomCollapse.bind(this);
