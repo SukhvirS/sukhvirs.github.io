@@ -31,58 +31,46 @@ class Skills extends React.Component{
         {
           this.state.width < 750?
           <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
-
-            {/* <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>General</h4>
-              <ul className="mobileUL" style={{float:"left"}}>
-                <li>Public Speaking</li>
-                <li>Microsoft Office</li>
-                <li>Git</li>
-              </ul>
-              <ul className="mobileUL" style={{float:"right"}}>
-                <li>Agile Development</li>
-                <li>Waterfall Development</li>
-              </ul>
-            </div>
-
-            <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Languages</h4>
-              <ul className="mobileUL" style={{float:"left"}}>
-                <li>Java</li>
-              </ul>
-              <ul className="mobileUL" style={{float:"right"}}>
-                <li>Python</li>
-              </ul>
-            </div> */}
-
+            
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
               <h4 style={{fontSize:"6vw"}}>Data Science</h4>
               <ul className="mobileUL" style={{float:"left"}}>
-                <li>TensorFlow</li>
                 <li>NumPy</li>
                 <li>Pandas</li>
+                <li>Scikit-learn</li>
+                <li>TensorFlow</li>
                 <li>Keras</li>
+                <li>Matplotlib</li>
+                <li>PySpark</li>
               </ul>
               <ul className="mobileUL" style={{float:"right"}}>
-                <li>SciKit Learn</li>
-                <li>Matplotlib</li>
                 <li>Seaborn</li>
+                <li>OpenCV</li>
                 <li>Plotly</li>
+                <li>Jupyter</li>
+                <li>SQL</li>
+                <li>AWS</li>
+                <li>GCP</li>
               </ul>
             </div>
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Front End</h4>
+              <h4 style={{fontSize:"6vw"}}>Full Stack Web Development</h4>
               <ul className="mobileUL" style={{float:"left"}}>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>HTML/CSS</li>
                 <li>Javascript</li>
-                <li>React.js</li>
+                <li>Python</li>
+                <li>RESTful APIs</li>
+                <li>CI/CD</li>
+                <li>AWS</li>
+                <li>Heroku</li>
               </ul>
               <ul className="mobileUL" style={{float:"right"}}>
                 <li>Bootstrap</li>
                 <li>Semantic UI</li>
                 <li>Leaflet</li>
+                <li>Flask</li>
+                <li>jQuery</li>
               </ul>
             </div>
 
@@ -95,7 +83,7 @@ class Skills extends React.Component{
                 <h1 style={{float:"left", margin:'0 0 0 30px'}}>Data Science</h1>
                 <br/>
                 <br/>
-                <hr style={{borderTop:'1px solid #d4d4d4', width:'80vw'}}/>
+                <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
                 <div style={{fontSize:'20px', margin:'30px'}}>
                   NumPy &nbsp;&nbsp;&nbsp;
                   Pandas &nbsp;&nbsp;&nbsp;
@@ -106,40 +94,40 @@ class Skills extends React.Component{
                   Matplotlib &nbsp;&nbsp;&nbsp;
                   Seaborn &nbsp;&nbsp;&nbsp;
                   Plotly &nbsp;&nbsp;&nbsp;
+                  OpenCV &nbsp;&nbsp;&nbsp;
+                  Jupyter &nbsp;&nbsp;&nbsp;
+                  SQL &nbsp;&nbsp;&nbsp;
+                  AWS &nbsp;&nbsp;&nbsp;
+                  GCP &nbsp;&nbsp;&nbsp;
                 </div>
-                {/* <div style={{margin:'0 0 0 30px'}}>
-                  <img src='https://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png' width='60px'/>
-                  &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png' width='100px'/>
-                  &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png' width='90px'/>
-                  &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/1200px-TensorFlowLogo.svg.png' width='80px'/>
-                  &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src='https://keras.io/img/logo.png' width='90px'/>
-                  &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png' width='90px'/>
-                  &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src='https://matplotlib.org/3.2.1/_static/logo2_compressed.svg' width='100px'/>
-                </div> */}
+
               </div>
             </div>
             <br/>
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Front End</h1>
+                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Full Stack Web Development</h1>
                 <br/>
                 <br/>
-                <hr style={{borderTop:'1px solid #d4d4d4', width:'80vw'}}/>
+                <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
                 <div style={{fontSize:'20px', margin:'30px'}}>
-                  HTML &nbsp;&nbsp;&nbsp;
-                  CSS &nbsp;&nbsp;&nbsp;
+                  HTML/CSS &nbsp;&nbsp;&nbsp;
                   Javascript &nbsp;&nbsp;&nbsp;
+                  Python &nbsp;&nbsp;&nbsp;
+                  PHP &nbsp;&nbsp;&nbsp;
+                  | &nbsp;&nbsp;&nbsp;
+                  RESTful APIs &nbsp;&nbsp;&nbsp;
+                  CI/CD &nbsp;&nbsp;&nbsp;
+                  Heroku &nbsp;&nbsp;&nbsp;
+                  AWS &nbsp;&nbsp;&nbsp;
+                  | &nbsp;&nbsp;&nbsp;
+                  Flask &nbsp;&nbsp;&nbsp;
                   React.js &nbsp;&nbsp;&nbsp;
                   Bootstrap &nbsp;&nbsp;&nbsp;
                   Semantic UI &nbsp;&nbsp;&nbsp;
-                  Leaflet
+                  Leaflet &nbsp;&nbsp;&nbsp;
+                  jQuery &nbsp;&nbsp;&nbsp;
                 </div>
               </div>
             </div>

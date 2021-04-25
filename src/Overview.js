@@ -32,50 +32,36 @@ class Overview extends React.Component{
           this.state.width < 750 ?
           <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
             <div style={{width:"100%", paddingBottom:"1em", marginTop:"15vh"}}>
-              <p style={{fontSize:"12vw", textAlign:"center", marginBottom:"-0.5em"}}>
+              <p style={{fontSize:'calc(5.563vw + 20px)', marginBottom:"-0.5em"}}>
                 SUKHVIR
               </p>
-              <p style={{fontSize:"12vw", textAlign:"center"}}>
+              <p style={{fontSize:"calc(5.563vw + 20px)", marginBottom:'-20px'}}>
                 SINGH
               </p>
             </div>
-
             <div>
-              <p style={{fontSize:"6vw", textAlign:"center"}}>sukhvir23singh@gmail.com</p>
+              <p style={{fontSize:"5vw", color:'grey'}}>sukhvir23singh@gmail.com</p>
             </div>
 
-            <p style={{fontSize:"3vw", textAlign:"center", fontSize:"5vw", padding:"1em 2em 0 2em", color:"gray"}}>
-              I'm a Software Engineering student at San Jose State University currently pursuing a
+            <hr style={{borderTop:'1px solid #d4d4d4'}}/>
+
+            <p style={{fontSize:"3vw", fontSize:"5vw", color:"gray"}}>
+              A Software Engineering student at San Jose State University currently pursuing a
               Master's Degree in Data Science.
             </p>
 
-            {/*
-            <div style={{paddingBottom:"2em"}}>
-              <img src={profileImage} alt="Profile" style={{width:"100%", paddingRight:"0"}}/>
-            </div>
-
-            <div>
-              <p style={{textAlign:"center", fontSize:"6vw"}}>
-              Software Engineering student at San Jose State University interested in software UI and machine learning.
-              </p>
-            </div>
-            */}
           </div>
           :
           <div>
-          {/*
-            <div style={{marginLeft:"10vw"}}>
-              <div style={{float:"left"}}>
-                <img src={profileImage} alt="Profile" style={styles.imageStyle}/>
-              </div>
-            </div>
-          */}
-            <div style={{textAlign:"center", verticalAlign:"middle"}}>
-              <p style={{fontSize:"6vw", marginTop:"10vh", marginBottom:"-0.25em"}}>SUKHVIR SINGH</p>
-              <p style={{fontSize:"4vw"}}>sukhvir23singh@gmail.com</p>
+            <div style={{margin:'0 12vw'}}>
+              <p style={{fontSize:"calc(5.563vw + 25px)", height:'6.5vw', margin:'-40px 0 0 0'}}>SUKHVIR</p>
+              <p style={{fontSize:"calc(5.563vw + 25px)", height:'6.5vw', margin:'0 0 20px 0'}}>SINGH</p>
+              <p style={{fontSize:"4vw", color:'grey'}}>sukhvir23singh@gmail.com</p>
 
-              <p style={{fontSize:"3vw", padding:"1em 2em 0 2em", color:"gray"}}>
-                I'm a Software Engineering student at San Jose State University currently pursuing a
+              <hr style={{borderTop:'1px solid #d4d4d4'}}/>
+
+              <p style={{fontSize:"3vw", color:"gray"}}>
+                A Software Engineering student at San Jose State University currently pursuing a
                 Master's Degree in Data Science.
               </p>
 

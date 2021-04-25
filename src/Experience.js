@@ -99,12 +99,13 @@ class Experience extends React.Component{
           this.state.width < 750 ?
           <div style={{padding:"0 3.5em 2em 2.7em", marginTop:"100px"}}>
             <h4 style={{margin:"1em 0 0 0"}}>Work</h4>
+            <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
 
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseResearch" onClick={this.toggleResearchCollapse}>
                 <div style={{float:"left", width:"60%"}}>
                   <ul style={{listStyleType:"none", padding:"0"}}>
-                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Researcher</h1></li>
+                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Research Assistant</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>SJSU Foundation</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Aug 2020 - <i>present</i></h4></li>
                   </ul>
@@ -119,7 +120,7 @@ class Experience extends React.Component{
             </div>
             <div>
               <div style={{fontSize:"4vw"}} className="collapse" id="collapseResearch">
-                <hr style={{borderTop:"1px solid #aaa"}}/>
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
                 A wildfire detection and prediction dashboard that can be used to view and analyze current fires and well as predicted progression of current fires. Built using multiple Machine Learning models.
               </div>
             </div>
@@ -131,7 +132,7 @@ class Experience extends React.Component{
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Coding Teacher</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Code With Us</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Aug 2019 - <i>present</i></h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Aug 2019 - Mar 2020</h4></li>
                   </ul>
                 </div>
                 {
@@ -144,19 +145,20 @@ class Experience extends React.Component{
             </div>
             <div>
               <div style={{fontSize:"4vw"}} className="collapse" id="collapseCodeWithUs">
-                <hr style={{borderTop:"1px solid #aaa"}}/>
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
                 I taught kids and teenagers how to code in Scratch, Python, Java, HTML, etc. at various aferschool programs in San Jose and the surrounding area.
               </div>
             </div>
 
-            <h4 style={{margin:"2em 0 0 0"}}>School Projects</h4>
+            <h4 style={{margin:"2em 0 0 0"}}>Projects</h4>
+            <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
 
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseChess" onClick={this.toggleChessCollapse} >
                 <div style={{float:"left", width:"60%"}}>
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Chess AI</h1></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Python Developer</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Machine Learning Engineer</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jan 2019 - Dec 2019</h4></li>
                   </ul>
                 </div>
@@ -170,7 +172,7 @@ class Experience extends React.Component{
             </div>
             <div>
               <div style={{fontSize:"4vw"}} className="collapse" id="collapseChess">
-                <hr style={{borderTop:"1px solid #aaa"}}/>
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
                   An AI capable enough to beat the average chess player. Our model was built using Convolutional Neural Networks and trained
                   on thousands of high level human Chess games.<br/>
                 <a href="https://github.com/dmilin1/BishopAI" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
@@ -201,7 +203,7 @@ class Experience extends React.Component{
             </div>
             <div>
               <div style={{fontSize:"4vw"}} className="collapse" id="collapseYelpRecommender">
-                <hr style={{borderTop:"1px solid #aaa"}}/>
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
                   A business recommendation system built using collaborative filtering and content-based algorithms and trained on the <a href="https://www.yelp.com/dataset">Yelp Academic dataset</a>.
               </div>
             </div>
@@ -225,7 +227,7 @@ class Experience extends React.Component{
             </div>
             <div>
               <div style={{fontSize:"4vw"}} className="collapse" id="collapseAtomPayroll">
-                <hr style={{borderTop:"1px solid #aaa"}}/>
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
                 An employee management web application suitable for large companies. It offers useful functions such as add, delete, edit, sort, and search.
                 We used React.js and Bootstrap for frontend, MongoDB for backend, and Auth0 for user authentication.<br/>
                 <a href="https://github.com/shawnsuarez/cmpe172-atom" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
@@ -299,7 +301,7 @@ class Experience extends React.Component{
             </div>
             <div style={{margin:"0 0 8em 0"}}>
               <div style={{fontSize:"4vw"}} className="collapse" id="collapseSaferway">
-                <hr style={{borderTop:"1px solid #aaa"}}/>
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
                 An online alternative to Safeway that allows users to buy groceries and common household items easily by search or sorting
                 by categories. Users can create an account to save items in their shopping cart and view their purchase history.
                 We used React.js, Bootstrap, and SemanticUI for frontend and MongoDB for backend.<br/>
@@ -348,11 +350,11 @@ class Experience extends React.Component{
             <div style={{display:"flex", justifyContent:"center"}}>
               <div style={{width:"80vw"}}>
                 <h4 style={{margin:"10px 0 16px 30px"}}>Work</h4>
-                <hr/>
+                <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/>
 
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
                   <ul style={{listStyleType:"none"}}>
-                    <li><h1 style={{float:"left", width:"100%"}}>Researcher</h1></li>
+                    <li><h1 style={{float:"left", width:"100%"}}>Research Assistant</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>SJSU Foundation</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Aug 2020 - <i>present</i></h4></li>
                   </ul>
@@ -369,7 +371,7 @@ class Experience extends React.Component{
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Coding Teacher</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Code With Us</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Aug 2019 - March 2020</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Aug 2019 - Mar 2020</h4></li>
                   </ul>
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
@@ -382,13 +384,13 @@ class Experience extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
-                <h4 style={{width:"80%", margin:"16px 0 16px 30px"}}>School Projects</h4>
-                <hr/>
+                <h4 style={{width:"80%", margin:"16px 0 16px 30px"}}>Projects</h4>
+                <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/>
                 
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Chess AI</h1></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Python Developer</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Machine Learning Engineer</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2019 - Dec 2019</h4></li>
                   </ul>
                 </div>
