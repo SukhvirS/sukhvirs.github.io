@@ -64,7 +64,6 @@ class Overview extends React.Component{
                 A Software Engineering student at San Jose State University currently pursuing a
                 Master's Degree in Data Science.
               </p>
-
             </div>
           </div>
         }
