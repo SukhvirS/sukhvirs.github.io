@@ -31,6 +31,8 @@ class Experience extends React.Component{
       chessCollapseOpen: false,
       researchCollapseOpen: false,
       yelpRecommenderOpen: false,
+      ssaiCollapse: false,
+      abstractReasoningCollapse: false,
     };
     
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -40,6 +42,8 @@ class Experience extends React.Component{
     this.toggleChessCollapse = this.toggleChessCollapse.bind(this);
     this.toggleResearchCollapse = this.toggleResearchCollapse.bind(this);
     this.toggleYelpRecommenderCollapse = this.toggleYelpRecommenderCollapse.bind(this);
+    this.toggleSSAICollapse = this.toggleSSAICollapse.bind(this);
+    this.toggleAbstractReasoningCollapse = this.toggleAbstractReasoningCollapse.bind(this);
   }
 
   componentDidMount() {
@@ -91,6 +95,18 @@ class Experience extends React.Component{
     })
   }
 
+  toggleSSAICollapse(){
+    this.setState({
+      ssaiCollapse: !this.state.ssaiCollapse
+    })
+  }
+
+  toggleAbstractReasoningCollapse(){
+    this.setState({
+      abstractReasoningCollapse: !this.state.abstractReasoningCollapse
+    })
+  }
+
   render(){
     return(
       <div style={{fontFamily:"Karla"}}>
@@ -101,13 +117,42 @@ class Experience extends React.Component{
             <h4 style={{margin:"1em 0 0 0"}}>Work</h4>
             <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
 
+
+            {/* SSAI */}
+            <div style={{display:"flex", margin:"10px 0 0 0"}}>
+              <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseSSAI" onClick={this.toggleSSAICollapse}>
+                <div style={{float:"left", width:"60%"}}>
+                  <ul style={{listStyleType:"none", padding:"0"}}>
+                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>ML/AI Intern</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Science Systems and Applications</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jun 2021 - Aug 2021</h4></li>
+                  </ul>
+                </div>
+                {
+                  this.state.ssaiCollapse ?
+                  <img src={up} alt="Up" width="30px" style={{float:"right"}}/>
+                  :
+                  <img src={down} alt="Down" width="30px" style={{float:"right"}}/>
+                }
+              </div>
+            </div>
+            <div>
+              <div style={{fontSize:"4vw"}} className="collapse" id="collapseSSAI">
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
+                Used satellite image data to train CNNs to perform land cover classification and also trained and evaluated models to improve accuracy and inference time.
+              </div>
+            </div>
+
+
+
+            {/* SJSU Research */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseResearch" onClick={this.toggleResearchCollapse}>
                 <div style={{float:"left", width:"60%"}}>
                   <ul style={{listStyleType:"none", padding:"0"}}>
                     <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Research Assistant</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>SJSU Foundation</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Aug 2020 - <i>present</i></h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Aug 2020 - Sep 2021</h4></li>
                   </ul>
                 </div>
                 {
@@ -126,6 +171,8 @@ class Experience extends React.Component{
             </div>
 
 
+
+            {/* Code with us */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseCodeWithUs" onClick={this.toggleTeacherCollapse}>
                 <div style={{float:"left", width:"60%"}}>
@@ -150,9 +197,45 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+
+
             <h4 style={{margin:"2em 0 0 0"}}>Projects</h4>
             <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
 
+            {/* ML abstract reasoning */}
+            <div style={{display:"flex", margin:"10px 0 0 0"}}>
+              <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseAbstractReasoning" onClick={this.toggleAbstractReasoningCollapse} >
+                <div style={{float:"left", width:"60%"}}>
+                  <ul style={{listStyleType:"none", padding:"0"}}>
+                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>ML Abstract Reasoning</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Machine Learning Engineer</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jan 2021 - Dec 2021</h4></li>
+                  </ul>
+                </div>
+                {
+                  this.state.abstractReasoningCollapse ?
+                  <img src={up} alt="Up" width="30px" style={{float:"right"}}/>
+                  :
+                  <img src={down} alt="Down" width="30px" style={{float:"right"}}/>
+                }
+              </div>
+            </div>
+            <div>
+              <div style={{fontSize:"4vw"}} className="collapse" id="collapseAbstractReasoning">
+                Machine learning models that can pass visual IQ tests (<a href='https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices' target="_blank">Raven's Progressive Matrices</a>) at an 80% success rate, showing the model's ability to learn the underlying patterns.
+                    <br/>
+                    <a href="https://github.com/alisaeidi92/distracting_feature" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
+                      https://github.com/alisaeidi92/distracting_feature
+                    </a>
+                  <img src="https://prod-cdn-assessment-blob.azureedge.net/cache/d/f/d/d/6/4/dfdd64bd4dbfb61a974afa09f32a8f375fab5257.png" width="100%" alt="Sample Raven's Progressive Matrix"/>
+                  <br/>
+                  <br/>
+              </div>
+            </div>
+
+
+            {/* Chess AI */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseChess" onClick={this.toggleChessCollapse} >
                 <div style={{float:"left", width:"60%"}}>
@@ -184,6 +267,8 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+            {/* Yelp recommender */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseYelpRecommender" onClick={this.toggleYelpRecommenderCollapse} >
                 <div style={{float:"left", width:"60%"}}>
@@ -208,6 +293,8 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+            {/* Atom payroll */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseAtomPayroll" onClick={this.toggleAtomCollapse} >
                 <div style={{float:"left", width:"60%"}}>
@@ -282,6 +369,8 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+            {/* Saferway */}
             <div style={{display:"flex",margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseSaferway" onClick={this.toggleSaferwayCollapse}>
                 <div style={{float:"left", width:"60%"}}>
@@ -352,11 +441,28 @@ class Experience extends React.Component{
                 <h4 style={{margin:"10px 0 16px 30px"}}>Work</h4>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/>
 
+                {/* SSAI */}
+                <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
+                  <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left", width:"100%"}}>ML/AI Intern</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Science Systems and Applications</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jun 2021 - Aug 2021</h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"56%", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    Used satellite image data to train CNNs to perform land cover classification and also trained and evaluated models to improve accuracy and inference time.
+                  </p>
+                </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+                {/* SJSU Research foundation */}
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Research Assistant</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>SJSU Foundation</h4></li>
-                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Aug 2020 - <i>present</i></h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Aug 2020 - Sep 2021</h4></li>
                   </ul>
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
@@ -364,9 +470,10 @@ class Experience extends React.Component{
                     A wildfire detection and prediction dashboard that can be used to view and analyze current fires and well as predicted progression of current fires. Built using multiple Machine Learning models.
                   </p>
                 </div>
-                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
+                {/* Code with us */}
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Coding Teacher</h1></li>
@@ -376,17 +483,49 @@ class Experience extends React.Component{
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
-                    I teach kids and teenagers how to code in Scratch, Python, Java, HTML, etc. at various aferschool programs in San Jose and the surrounding area.
+                    I taught kids and teenagers how to code in Scratch, Python, Java, HTML, etc. at various aferschool programs in San Jose and the surrounding area.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
+
+
+            <div style={{display:"flex", justifyContent:"center", margin:"4em 0 0 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <h4 style={{width:"80%", margin:"16px 0 16px 30px"}}>Projects</h4>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/>
-                
+              </div>
+            </div>
+
+
+            {/* ML abstract reasoning */}
+            <div style={{display:"flex", justifyContent:"center", margin:"0 0 4em 0"}}>
+              <div style={{width:"80%"}}>
+                <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
+                  <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left", width:"100%"}}>ML Abstract Reasoning</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Machine Learning Engineer</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2021 - Dec 2021</h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"56%", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    Machine learning models that can pass visual IQ tests (<a href='https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices' target="_blank">Raven's Progressive Matrices</a>) at an 80% success rate, showing the model's ability to learn the underlying patterns.
+                    <br/>
+                    <a href="https://github.com/alisaeidi92/distracting_feature" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
+                      https://github.com/alisaeidi92/distracting_feature
+                    </a>
+                  </p>
+                  <img src="https://prod-cdn-assessment-blob.azureedge.net/cache/d/f/d/d/6/4/dfdd64bd4dbfb61a974afa09f32a8f375fab5257.png" width="100%" alt="Sample Raven's Progressive Matrix"/>
+                </div>
+              </div>
+            </div>
+
+
+            {/* Chess AI */}
+            <div style={{display:"flex", justifyContent:"center", margin:"0 0 4em 0"}}>
+              <div style={{width:"80%", margin:'1em 0 0 0'}}>
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
                   <ul style={{listStyleType:"none"}}>
                     <li><h1 style={{float:"left", width:"100%"}}>Chess AI</h1></li>
@@ -408,6 +547,8 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+            {/* Yelp recommender */}
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <div style={{float:"left", width:"40%", fontSize:"3vw", marginLeft:'-14px'}}>
@@ -426,6 +567,8 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+            {/* Atom payroll */}
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <div style={{float:"left", width:"40%", fontSize:"3vw", marginLeft:'-14px'}}>
@@ -491,6 +634,8 @@ class Experience extends React.Component{
               </div>
             </div>
 
+
+            {/* Saferway */}
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 4em 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <div style={{float:"left", width:"40%", fontSize:"3vw", marginLeft:'-14px'}}>

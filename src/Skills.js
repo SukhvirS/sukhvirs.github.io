@@ -35,6 +35,7 @@ class Skills extends React.Component{
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
               <h4 style={{fontSize:"6vw"}}>Data Science</h4>
               <ul className="mobileUL" style={{float:"left"}}>
+                <li>Python</li>
                 <li>NumPy</li>
                 <li>Pandas</li>
                 <li>Scikit-learn</li>
@@ -55,17 +56,17 @@ class Skills extends React.Component{
             </div>
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Full Stack Web Development</h4>
+              <h4 style={{fontSize:"6vw"}}>Others</h4>
               <ul className="mobileUL" style={{float:"left"}}>
+                <li>Java</li>
                 <li>HTML/CSS</li>
                 <li>Javascript</li>
-                <li>Python</li>
                 <li>RESTful APIs</li>
                 <li>CI/CD</li>
                 <li>AWS</li>
-                <li>Heroku</li>
               </ul>
               <ul className="mobileUL" style={{float:"right"}}>
+                <li>Heroku</li>
                 <li>Bootstrap</li>
                 <li>Semantic UI</li>
                 <li>Leaflet</li>
@@ -85,6 +86,7 @@ class Skills extends React.Component{
                 <br/>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
                 <div style={{fontSize:'20px', margin:'30px'}}>
+                  Python &nbsp;&nbsp;&nbsp;
                   NumPy &nbsp;&nbsp;&nbsp;
                   Pandas &nbsp;&nbsp;&nbsp;
                   Scikit-learn &nbsp;&nbsp;&nbsp;
@@ -107,21 +109,19 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Full Stack Web Development</h1>
+                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Others</h1>
                 <br/>
                 <br/>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
                 <div style={{fontSize:'20px', margin:'30px'}}>
+                  Java &nbsp;&nbsp;&nbsp;
                   HTML/CSS &nbsp;&nbsp;&nbsp;
                   Javascript &nbsp;&nbsp;&nbsp;
-                  Python &nbsp;&nbsp;&nbsp;
                   PHP &nbsp;&nbsp;&nbsp;
-                  | &nbsp;&nbsp;&nbsp;
                   RESTful APIs &nbsp;&nbsp;&nbsp;
                   CI/CD &nbsp;&nbsp;&nbsp;
                   Heroku &nbsp;&nbsp;&nbsp;
                   AWS &nbsp;&nbsp;&nbsp;
-                  | &nbsp;&nbsp;&nbsp;
                   Flask &nbsp;&nbsp;&nbsp;
                   React.js &nbsp;&nbsp;&nbsp;
                   Bootstrap &nbsp;&nbsp;&nbsp;
