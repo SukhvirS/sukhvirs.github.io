@@ -444,10 +444,7 @@ class Experience extends React.Component{
                 <br/>
               </div>
             </div>
-
-            {/* <div style={{height:'30px', width:'30px', float:'right', bottom:'0', borderRadius:'6px', borderRadius:'6px', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div> */}
-            <RedLogo />
-
+            
           </div>
           :
           <div>
