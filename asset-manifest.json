@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fdc9e2fd.css",
-    "main.js": "/static/js/main.a9494d0a.js",
+    "main.js": "/static/js/main.ca95b52c.js",
     "static/media/saferway1.png": "/static/media/saferway1.eed96c3121b0ff3bd602.png",
     "static/media/saferway3.png": "/static/media/saferway3.4327104426abb4ccba4e.png",
     "static/media/atom1.png": "/static/media/atom1.9a15ed5f793ba5bc8fc0.png",
@@ -32,10 +32,10 @@
     "static/media/grey_arrow.png": "/static/media/grey_arrow.23122a2212ea01da010f.png",
     "index.html": "/index.html",
     "main.fdc9e2fd.css.map": "/static/css/main.fdc9e2fd.css.map",
-    "main.a9494d0a.js.map": "/static/js/main.a9494d0a.js.map"
+    "main.ca95b52c.js.map": "/static/js/main.ca95b52c.js.map"
   },
   "entrypoints": [
     "static/css/main.fdc9e2fd.css",
-    "static/js/main.a9494d0a.js"
+    "static/js/main.ca95b52c.js"
   ]
 }
