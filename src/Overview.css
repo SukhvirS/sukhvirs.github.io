@@ -1,102 +1,217 @@
-body {
-    /* background: linear-gradient(white, #21528a) fixed; */
-}
 
 #email_btn {
     color: black;
-    transition: 0.3s;
+    border: 1px solid #c9c9c9;
+    /* transition: 0.3s; */
+    display: inline-block;
+    padding: 10px 15px 10px 25px;
+    border-radius: 30px;
+    width: 220px;
+    transition: width 0.2s;
   }
   
 #email_btn:hover {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    border: 1px solid black;
+    /* color: white; */
     opacity: 1;
+    width: 280px;
+    /* transition: 1s; */
 }
 
 #email_image{
     height: 35px;
     width: 35px;
-    margin: 0 10px 0 0;
-    background: url('./resources/images/email_test.png');
+    margin: 0 0 0 10px;
+    /* background: url('./resources/images/imail_circle.png'); */
+    background: url('./resources/images/black_arrow.png');
     background-size:     cover;  
     background-repeat:   no-repeat;
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
     transition: 0.6s;
+    float: right;
 }
 
 #email_btn:hover > #email_image {
-    transition: 0.6s;
-    /* background: url('./resources/images/email_test_white.png'); */
-    background: url('./resources/images/imail_circle.png');
+    transition: 0.5s;
+    /* background: url('./resources/images/imail_circle.png'); */
+    background: url('./resources/images/white_arrow.png');
     background-size:     cover;    
     background-repeat:   no-repeat;
-    display: inline-block;
+    /* border: 1px solid black;
+    border-radius: 30px; */
+    /* display: inline-block; */
 }
+
+#email_label {
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+#email_btn:hover > #email_label {
+    /* display: none; */
+    opacity: 0;
+    /* color: grey; */
+    margin: -40000px 0 0 0;
+    transition: margin .1s;
+    transition: opacity .1s;
+}
+
+#email_reveal {
+    opacity: 0;
+    float: left;
+    margin: 10px 0 0 -50px;
+    /* display: none; */
+    position: absolute;
+    z-index:100;
+}
+
+#email_btn:hover > #email_reveal {
+    /* display: inline; */
+    opacity: 1;
+    margin: 4px 0 0 0;
+    transition: margin .4s;
+    transition: opacity .4s;
+}
+
 
 /*  */
 
 #linkedin_btn {
     color: black;
+    border: 1px solid #c9c9c9;
     transition: 0.3s;
+    display: inline-block;
+    padding: 10px 15px 10px 25px;
+    border-radius: 30px;
+    width: 220px;
+    transition: width 0.2s;
   }
   
 #linkedin_btn:hover {
-    background-color: black;
-    color: white;
+    border: 1px solid black;
     opacity: 1;
+    width: 280px;
 }
 
 #linkedin_image{
     height: 35px;
     width: 35px;
-    margin: 0 10px 0 0;
-    background: url('./resources/images/linkedin_dark.png');
+    margin: 0 0 0 10px;
+    /* background: url('./resources/images/linkedin_circle.png'); */
+    background: url('./resources/images/black_arrow.png');
     background-size:     cover;  
     background-repeat:   no-repeat;
-    display: inline-block;
-    vertical-align: middle;
     transition: 0.6s;
+    float: right;
 }
 
 #linkedin_btn:hover > #linkedin_image {
-    transition: 0.6s;
-    background: url('./resources/images/linkedin_logo.png');
+    transition: 0.5s;
+    /* background: url('./resources/images/linkedin_logo.png'); */
+    background: url('./resources/images/white_arrow.png');
     background-size:     cover;    
     background-repeat:   no-repeat;
-    display: inline-block;
 }
+
+#linkedin_label {
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+#linkedin_btn:hover > #linkedin_label {
+    /* display: none; */
+    opacity: 0;
+    margin: -40000px 0 0 0;
+    transition: margin .1s;
+    transition: opacity .1s;
+}
+
+#linkedin_reveal {
+    /* display: none; */
+    opacity: 0;
+    margin: 10px 0 0 -50px;
+    position: absolute;
+    z-index: 100;
+}
+
+#linkedin_btn:hover > #linkedin_reveal {
+    /* display: inline; */
+    opacity: 1;
+    margin: 4px 0 0 0;
+    transition: margin .4s;
+    transition: opacity .4s;
+}
+
 
 
 /*  */
 
 #github_btn {
     color: black;
+    border: 1px solid #c9c9c9;
     transition: 0.3s;
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    width: 220px;
+    transition: width 0.2s;
   }
   
 #github_btn:hover {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    border: 1px solid black;
     opacity: 1;
+    width: 280px;
 }
 
 #github_image{
     height: 35px;
     width: 35px;
-    margin: 0 10px 0 0;
-    background: url('./resources/images/github_dark.png');
+    margin: 0 0 0 10px;
+    /* background: url('./resources/images/github_dark.png'); */
+    background: url('./resources/images/black_arrow.png');
     background-size:     cover;  
     background-repeat:   no-repeat;
-    display: inline-block;
-    vertical-align: middle;
     transition: 0.6s;
+    float: right;
 }
 
 #github_btn:hover > #github_image {
-    transition: 0.6s;
-    background: url('./resources/images/github_light.png');
+    transition: 0.5s;
+    /* background: url('./resources/images/github_light.png'); */
+    background: url('./resources/images/white_arrow.png');
     background-size:     cover;    
     background-repeat:   no-repeat;
-    display: inline-block;
+}
+
+#github_label {
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+#github_btn:hover > #github_label {
+    /* display: none; */
+    opacity: 1;
+    margin: -40000px 0 0 0;
+    transition: margin .1s;
+    transition: opacity .1s;
+}
+
+#github_reveal {
+    /* display: none; */
+    opacity: 0;
+    float: left;
+    margin: 10px 0 0 -50px;
+    position: absolute;
+    z-index: 100;
+}
+
+#github_btn:hover > #github_reveal {
+    /* display: inline; */
+    opacity: 1;
+    margin: 4px 0 0 0;
+    transition: margin .4s;
+    transition: opacity .4s;
 }

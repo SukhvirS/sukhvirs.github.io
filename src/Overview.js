@@ -2,16 +2,16 @@ import React from 'react';
 
 import MyNavbar from './components/MyNavbar'
 import profileImage from './resources/images/profileImage3.jpg';
+import storage from 'local-storage-fallback';
 import email_dark from './resources/images/email_dark.png';
 import email_light from './resources/images/email_light.png';
 import github_dark from './resources/images/github_dark.png';
 import github_light from './resources/images/github_light.png';
 import linkedin_dark from './resources/images/linkedin_dark.png';
 import linkedin_light from './resources/images/linkedin_light.png';
-
 import './Overview.css';
-
-import storage from 'local-storage-fallback';
+import RedLogo from './components/RedLogo';
+import BlueLogo from './components/BlueLogo';
 
 class Overview extends React.Component{
 
@@ -52,12 +52,12 @@ class Overview extends React.Component{
           this.state.width < 750 ?
           <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
             <div style={{width:"100%", paddingBottom:"1em", marginTop:"15vh"}}>
-              <p style={{fontSize:'calc(5.563vw + 20px)', marginBottom:"-0.5em"}}>
-                SUKHVIR
+              <p style={{fontSize:'calc(3.563vw + 20px)', marginBottom:"-0.5em"}}>
+                Sukhvir Singh
               </p>
-              <p style={{fontSize:"calc(5.563vw + 20px)", marginBottom:'-20px'}}>
+              {/* <p style={{fontSize:"calc(5.563vw + 20px)", marginBottom:'-20px'}}>
                 SINGH
-              </p>
+              </p> */}
             </div>
             <div>
               <p style={{fontSize:"5vw", color:'grey'}}>sukhvir23singh@gmail.com</p>
@@ -73,16 +73,19 @@ class Overview extends React.Component{
           :
           <div>
             <div style={{margin:'0 12vw'}}>
-              <p style={{fontSize:"calc(2.563vw + 25px)", height:'6.5vw', margin:'0px 0 0 0'}}>Sukhvir Singh</p>
-              {/* <p style={{fontSize:"calc(5.563vw + 25px)", height:'6.5vw', margin:'0 0 20px 0'}}>SINGH</p> */}
+              {/* <p style={{fontSize:"calc(2.563vw + 25px)", height:'6.5vw', margin:'0px 0 0 0'}}>Sukhvir Singh</p> */}
 
+              <p style={{fontSize:"32px", color:"gray", padding:'0 0 0 2px'}}>
+                I'm a <span style={{color:'black'}}>software engineer</span> experienced in building full-stack machine learning applications using big data. Proficient in every step of the <span style={{color:'black'}}>machine learning</span> pipeline, from data collection and preprocessing to model deployment and maintenance.
+              </p>
+
+              <br/>
               <br/>
 
 
               {
                 theme.mode == 'dark'?
                 <div>
-
                   <a href="mailto:sukhvir23singh@gmail.com">
                     <div style={{margin:'0 30px 8px 10px', border:'1px solid white', padding:'3px', borderRadius:'30px'}}>
                       <img src={email_light} height='50px'/>
@@ -101,53 +104,68 @@ class Overview extends React.Component{
                   </a>
                   {/* <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank'>https://www.linkedin.com/in/sukhvir-singh-62ba48121/</a> */}
 
+                  <BlueLogo />
+
                 </div>
                 :
-                <div>
+                <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
 
                   <a href="mailto:sukhvir23singh@gmail.com">
-                    <div id='email_btn' style={{border:'1px solid grey', display:'inline-block', padding:'10px 15px 10px 10px', borderRadius:'30px'}}>
+                    <div id='email_btn'>
 
-                      <div id='email_image'></div>
-                      sukhvir23singh@gmail.com
+                      {/* <div id='email_image'></div> */}
+                      {/* sukhvir23singh@gmail.com */}
+
+                        {/* <div> */}
+                        <span id='email_label'>Email</span>
+                        <span id='email_reveal'>sukhvir23singh@gmail.com</span>
+                        {/* </div> */}
+                        {/* <p id='email_id' style={{float:'left', margin:'4px 0 0 0'}}>sukhvir23singh@gmail.com</p> */}
+                        <div id='email_image'></div>
                       
                     </div>
                   </a>
 
                   <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' style={{margin:'0 10px'}}>
-                    <div id='linkedin_btn' style={{border:'1px solid grey', display:'inline-block', padding:'10px 15px 10px 10px', borderRadius:'30px'}}>
+                    <div id='linkedin_btn'>
                       
+                      {/* <div id='linkedin_image' /> */}
+                      {/* Sukhvir Singh */}
+
+                      
+                      {/* <p style={{float:'left', margin:'4px 0 0 0'}}>LinkedIn</p> */}
+
+                      <span id='linkedin_label'>LinkedIn</span>
+                      <span id='linkedin_reveal'>Sukhvir Singh</span>
+
                       <div id='linkedin_image' />
-                      Sukhvir Singh
 
                     </div>
                   </a>
 
                   <a href='https://github.com/SukhvirS' target='_blank'>
-                    <div id='github_btn' style={{border:'1px solid grey', display:'inline-block', padding:'10px 15px 10px 10px', borderRadius:'30px'}}>
+                    <div id='github_btn'>
 
+                        {/* <div id='github_image' /> */}
+                        {/* SukhvirS */}
+
+                        {/* <p style={{float:'left', margin:'4px 0 0 0'}}>GitHub</p> */}
+
+                        <span id='github_label'>GitHub</span>
+                        <span id='github_reveal'>SukhvirS</span>
                         <div id='github_image' />
-                        SukhvirS
                         
                       </div>
                   </a>
 
+                  <RedLogo />
+
                 </div>
               }
-              {/* <img src={email_light} height='50px'/> */}
-
-
-              {/* <p style={{fontSize:"4vw", color:'grey'}}>sukhvir23singh@gmail.com</p> */}
-
-              <hr style={{borderTop:'1px solid #d4d4d4', margin:'24px 0 10px 0'}}/>
-
-              <p style={{fontSize:"32px", color:"gray"}}>
-                I'm a <span style={{color:'black'}}>software engineer</span> experienced in building full-stack machine learning applications using big data. Proficient in every step of the <span style={{color:'black'}}>machine learning</span> pipeline, from data collection and preprocessing to model deployment and maintenance.
-              </p>
             </div>
           </div>
         }
-        <div style={{height:'30px', width:'30px', float:'right', bottom:'0', right:'0', backgroundColor:'red', margin:'0 10px 10px 0', position:'absolute'}}></div>
+
       </div>
     )
   }

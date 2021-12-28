@@ -17,3 +17,8 @@ code {
   font-family: "Circular";
   src: local("Circular"), url("./resources/fonts/CircularStd-Book.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Circular Light";
+  src: local("Circular Light"), url("./resources/fonts/CircularStd-Light.otf") format("opentype");
+}

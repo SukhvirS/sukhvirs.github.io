@@ -221,7 +221,7 @@ class MyNavbar extends React.Component{
                 <div className="navbar navbar-expand navbar-light" style={{width:"80vw", margin:"30px auto", gridFloatBreakpoint:"1600px"}}>
 
                   {/** Dark mode switch */}
-                  <div className="nav-item" style={{}}>
+                  {/* <div className="nav-item" style={{}}>
                     {
                       theme.mode === 'dark'?
                       <Link className='nav-link' to="#" onClick = {e =>
@@ -236,7 +236,8 @@ class MyNavbar extends React.Component{
                         <img src={moon} alt="Dark Mode" width="25px"/>
                       </Link>
                     }
-                  </div>
+                  </div> */}
+                  <p style={{fontSize:'calc(1.563vw + 20px)', padding:'10px 0 0 10px'}}>Sukhvir Singh</p>
 
                   {/* Navigatioin buttons*/}
                   <div style={{position:"absolute", right:"0"}}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import RedLogo from './components/RedLogo';
 
 import MyNavbar from './components/MyNavbar';
 import './skills.css';
@@ -56,7 +57,7 @@ class Skills extends React.Component{
             </div>
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Others</h4>
+              <h4 style={{fontSize:"6vw"}}>Other</h4>
               <ul className="mobileUL" style={{float:"left"}}>
                 <li>Java</li>
                 <li>HTML/CSS</li>
@@ -74,7 +75,10 @@ class Skills extends React.Component{
                 <li>jQuery</li>
               </ul>
             </div>
-            <div style={{height:'30px', width:'30px', float:'right', bottom:'0', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div>
+
+            {/* <div style={{height:'30px', width:'30px', float:'right', bottom:'0', borderRadius:'6px', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div> */}
+
+            <RedLogo />
 
           </div>
           :
@@ -82,11 +86,11 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Machine Learning / Data Science</h1>
+                <h1 style={{float:"left", margin:'0 0 0 26px'}}>Machine Learning / Data Science</h1>
                 <br/>
                 <br/>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
-                <div style={{fontSize:'20px', margin:'30px'}}>
+                <div style={{fontSize:'20px', margin:'28px'}}>
                   Python &nbsp;&nbsp;&nbsp;
                   NumPy &nbsp;&nbsp;&nbsp;
                   Pandas &nbsp;&nbsp;&nbsp;
@@ -110,11 +114,11 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Others</h1>
+                <h1 style={{float:"left", margin:'0 0 0 26px'}}>Other</h1>
                 <br/>
                 <br/>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
-                <div style={{fontSize:'20px', margin:'30px'}}>
+                <div style={{fontSize:'20px', margin:'28px'}}>
                   Java &nbsp;&nbsp;&nbsp;
                   HTML/CSS &nbsp;&nbsp;&nbsp;
                   Javascript &nbsp;&nbsp;&nbsp;
@@ -132,7 +136,11 @@ class Skills extends React.Component{
                 </div>
               </div>
             </div>
-            <div style={{height:'30px', width:'30px', bottom:'0', right:'0', backgroundColor:'red', position:'absolute', margin:'0 10px 10px 0'}}></div>
+
+            {/* <div style={{height:'30px', width:'30px', bottom:'0', borderRadius:'6px', right:'0', backgroundColor:'red', position:'absolute', margin:'0 10px 10px 0'}}></div> */}
+
+            <RedLogo />
+
           </div>
         }
       </div>
