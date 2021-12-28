@@ -109,7 +109,7 @@ class Experience extends React.Component{
 
   render(){
     return(
-      <div style={{fontFamily:"Karla"}}>
+      <div style={{fontFamily:"Circular"}}>
         <MyNavbar />
         {
           this.state.width < 750 ?
@@ -433,6 +433,7 @@ class Experience extends React.Component{
                 <br/>
               </div>
             </div>
+            <div style={{height:'30px', width:'30px', float:'right', bottom:'0', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div>
           </div>
           :
           <div>
@@ -688,6 +689,9 @@ class Experience extends React.Component{
                 </div>
               </div>
             </div>
+            
+            <div style={{height:'30px', width:'30px', float:'right', bottom:'0', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div>
+
           </div>
         }
       </div>

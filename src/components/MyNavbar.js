@@ -42,7 +42,7 @@ class MyNavbar extends React.Component{
   render(){
     const theme = this.getInitialTheme();
     return(
-      <div style={{fontFamily:"Karla"}}>
+      <div style={{fontFamily:"Circular"}}>
         {
           this.state.width < 750 ?
           <div>
@@ -247,7 +247,7 @@ class MyNavbar extends React.Component{
                         {
                           window.location.href === "https://sukhvirs.com/" ?
                           <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
-                            , outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
+                            , borderBottom: theme.mode == 'light' ? '2px solid black' : '2px solid white', margin:'0 0 -2px 0'}}>
                             HOME
                           </Link>
                           :
@@ -261,8 +261,7 @@ class MyNavbar extends React.Component{
                       <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
                           window.location.href.indexOf("skills")> -1 ?
-                          <Link className="nav-link" to="/skills" style={{color:theme.mode === 'light' ? 'black' : 'white',
-                           outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
+                          <Link className="nav-link" to="/skills" style={{color:theme.mode === 'light' ? 'black' : 'white', borderBottom: theme.mode == 'light' ? '2px solid black' : '2px solid white', margin:'0 0 -2px 0', margin:'0 0 -2px 0'}}>
                             SKILLS
                           </Link>
                           :
@@ -276,8 +275,7 @@ class MyNavbar extends React.Component{
                       <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
                           window.location.href.indexOf("experience") > -1 ?
-                          <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white',
-                           outline:"1px solid", outlineColor: theme.mode === 'light' ? 'black':'white'}}>
+                          <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white', borderBottom: theme.mode == 'light' ? '2px solid black' : '2px solid white', margin:'0 0 -2px 0', margin:'0 0 -2px 0'}}>
                             EXPERIENCE
                           </Link>
                           :

@@ -26,14 +26,14 @@ class Skills extends React.Component{
 
   render(){
     return(
-      <div style={{fontFamily:"Karla"}}>
+      <div style={{fontFamily:"Circular"}}>
         <MyNavbar />
         {
           this.state.width < 750?
           <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
             
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Data Science</h4>
+              <h4 style={{fontSize:"6vw"}}>Machine Learning / Data Science</h4>
               <ul className="mobileUL" style={{float:"left"}}>
                 <li>Python</li>
                 <li>NumPy</li>
@@ -74,6 +74,7 @@ class Skills extends React.Component{
                 <li>jQuery</li>
               </ul>
             </div>
+            <div style={{height:'30px', width:'30px', float:'right', bottom:'0', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div>
 
           </div>
           :
@@ -81,7 +82,7 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Data Science</h1>
+                <h1 style={{float:"left", margin:'0 0 0 30px'}}>Machine Learning / Data Science</h1>
                 <br/>
                 <br/>
                 <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
@@ -131,6 +132,7 @@ class Skills extends React.Component{
                 </div>
               </div>
             </div>
+            <div style={{height:'30px', width:'30px', bottom:'0', right:'0', backgroundColor:'red', position:'absolute', margin:'0 10px 10px 0'}}></div>
           </div>
         }
       </div>

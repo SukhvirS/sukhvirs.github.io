@@ -1,0 +1,102 @@
+body {
+    /* background: linear-gradient(white, #21528a) fixed; */
+}
+
+#email_btn {
+    color: black;
+    transition: 0.3s;
+  }
+  
+#email_btn:hover {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+#email_image{
+    height: 35px;
+    width: 35px;
+    margin: 0 10px 0 0;
+    background: url('./resources/images/email_test.png');
+    background-size:     cover;  
+    background-repeat:   no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.6s;
+}
+
+#email_btn:hover > #email_image {
+    transition: 0.6s;
+    /* background: url('./resources/images/email_test_white.png'); */
+    background: url('./resources/images/imail_circle.png');
+    background-size:     cover;    
+    background-repeat:   no-repeat;
+    display: inline-block;
+}
+
+/*  */
+
+#linkedin_btn {
+    color: black;
+    transition: 0.3s;
+  }
+  
+#linkedin_btn:hover {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+#linkedin_image{
+    height: 35px;
+    width: 35px;
+    margin: 0 10px 0 0;
+    background: url('./resources/images/linkedin_dark.png');
+    background-size:     cover;  
+    background-repeat:   no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.6s;
+}
+
+#linkedin_btn:hover > #linkedin_image {
+    transition: 0.6s;
+    background: url('./resources/images/linkedin_logo.png');
+    background-size:     cover;    
+    background-repeat:   no-repeat;
+    display: inline-block;
+}
+
+
+/*  */
+
+#github_btn {
+    color: black;
+    transition: 0.3s;
+  }
+  
+#github_btn:hover {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+#github_image{
+    height: 35px;
+    width: 35px;
+    margin: 0 10px 0 0;
+    background: url('./resources/images/github_dark.png');
+    background-size:     cover;  
+    background-repeat:   no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.6s;
+}
+
+#github_btn:hover > #github_image {
+    transition: 0.6s;
+    background: url('./resources/images/github_light.png');
+    background-size:     cover;    
+    background-repeat:   no-repeat;
+    display: inline-block;
+}
