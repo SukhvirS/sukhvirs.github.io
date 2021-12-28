@@ -1,4 +1,4 @@
-
+/* light mode - email button */
 #email_btn {
     color: black;
     border: 1px solid #c9c9c9;
@@ -76,7 +76,7 @@
 }
 
 
-/*  */
+/* light mode - linkedin button */
 
 #linkedin_btn {
     color: black;
@@ -146,14 +146,14 @@
 
 
 
-/*  */
+/* light mode - github button */
 
 #github_btn {
     color: black;
     border: 1px solid #c9c9c9;
     transition: 0.3s;
     display: inline-block;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 10px 25px;
     border-radius: 30px;
     width: 220px;
     transition: width 0.2s;
@@ -209,6 +209,228 @@
 }
 
 #github_btn:hover > #github_reveal {
+    /* display: inline; */
+    opacity: 1;
+    margin: 4px 0 0 0;
+    transition: margin .4s;
+    transition: opacity .4s;
+}
+
+
+/* ------ DARK MODE -------- */
+
+/* dark mode - email button */
+#email_btn_dark {
+    color: #eeeeee;
+    border: 1px solid #3d3d3d;
+    /* transition: 0.3s; */
+    display: inline-block;
+    padding: 10px 15px 10px 25px;
+    border-radius: 30px;
+    width: 220px;
+    transition: width 0.2s;
+  }
+  
+#email_btn_dark:hover {
+    /* background-color: black; */
+    border: 1px solid #828181;
+    /* color: white; */
+    opacity: 1;
+    width: 280px;
+    /* transition: 1s; */
+}
+
+#email_image_dark {
+    height: 35px;
+    width: 35px;
+    margin: 0 0 0 10px;
+    /* background: url('./resources/images/imail_circle.png'); */
+    background: url('./resources/images/grey_arrow.png');
+    background-size:     cover;  
+    background-repeat:   no-repeat;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    transition: 0.2s;
+    float: right;
+}
+
+#email_btn_dark:hover > #email_image_dark {
+    transition: 0.3s;
+    /* background: url('./resources/images/imail_circle.png'); */
+    background: url('./resources/images/white_arrow.png');
+    background-size:     cover;    
+    background-repeat:   no-repeat;
+    /* border: 1px solid black;
+    border-radius: 30px; */
+    /* display: inline-block; */
+}
+
+#email_label_dark {
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+#email_btn_dark:hover > #email_label_dark {
+    /* display: none; */
+    opacity: 0;
+    /* color: grey; */
+    margin: -40000px 0 0 0;
+    transition: margin .1s;
+    transition: opacity .1s;
+}
+
+#email_reveal_dark {
+    opacity: 0;
+    float: left;
+    margin: 10px 0 0 -50px;
+    /* display: none; */
+    position: absolute;
+    z-index:100;
+}
+
+#email_btn_dark:hover > #email_reveal_dark {
+    /* display: inline; */
+    opacity: 1;
+    margin: 4px 0 0 0;
+    transition: margin .4s;
+    transition: opacity .4s;
+}
+
+
+/* dark mode - linkedin button */
+
+#linkedin_btn_dark {
+    color: #eeeeee;
+    border: 1px solid #3d3d3d;
+    /* transition: 0.3s; */
+    display: inline-block;
+    padding: 10px 15px 10px 25px;
+    border-radius: 30px;
+    width: 220px;
+    transition: width 0.2s;
+  }
+  
+#linkedin_btn_dark:hover {
+    border: 1px solid #828181;
+    opacity: 1;
+    width: 280px;
+}
+
+#linkedin_image_dark{
+    height: 35px;
+    width: 35px;
+    margin: 0 0 0 10px;
+    /* background: url('./resources/images/linkedin_circle.png'); */
+    background: url('./resources/images/grey_arrow.png');
+    background-size:     cover;  
+    background-repeat:   no-repeat;
+    transition: 0.2s;
+    float: right;
+}
+
+#linkedin_btn_dark:hover > #linkedin_image_dark {
+    transition: 0.3s;
+    /* background: url('./resources/images/linkedin_logo.png'); */
+    background: url('./resources/images/white_arrow.png');
+    background-size:     cover;    
+    background-repeat:   no-repeat;
+}
+
+#linkedin_label_dark {
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+#linkedin_btn_dark:hover > #linkedin_label_dark {
+    /* display: none; */
+    opacity: 0;
+    margin: -40000px 0 0 0;
+    transition: margin .1s;
+    transition: opacity .1s;
+}
+
+#linkedin_reveal_dark {
+    /* display: none; */
+    opacity: 0;
+    float: left;
+    margin: 10px 0 0 -50px;
+    position: absolute;
+    z-index: 100;
+}
+
+#linkedin_btn_dark:hover > #linkedin_reveal_dark {
+    /* display: inline; */
+    opacity: 1;
+    margin: 4px 0 0 0;
+    transition: margin .4s;
+    transition: opacity .4s;
+}
+
+
+
+/* dark mode - github button */
+
+#github_btn_dark {
+    color: #eeeeee;
+    border: 1px solid #3d3d3d;
+    /* transition: 0.3s; */
+    display: inline-block;
+    padding: 10px 15px 10px 25px;
+    border-radius: 30px;
+    width: 220px;
+    transition: width 0.2s;
+  }
+  
+#github_btn_dark:hover {
+    /* background-color: black; */
+    border: 1px solid #828181;
+    opacity: 1;
+    width: 280px;
+}
+
+#github_image_dark {
+    height: 35px;
+    width: 35px;
+    margin: 0 0 0 10px;
+    /* background: url('./resources/images/github_dark.png'); */
+    background: url('./resources/images/grey_arrow.png');
+    background-size:     cover;  
+    background-repeat:   no-repeat;
+    transition: 0.2s;
+    float: right;
+}
+
+#github_btn_dark:hover > #github_image_dark {
+    transition: 0.3s;
+    /* background: url('./resources/images/github_light.png'); */
+    background: url('./resources/images/white_arrow.png');
+    background-size:     cover;    
+    background-repeat:   no-repeat;
+}
+
+#github_label_dark {
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+#github_btn_dark:hover > #github_label_dark {
+    /* display: none; */
+    opacity: 1;
+    margin: -40000px 0 0 0;
+    transition: margin .1s;
+    transition: opacity .1s;
+}
+
+#github_reveal_dark {
+    /* display: none; */
+    opacity: 0;
+    float: left;
+    margin: 10px 0 0 -50px;
+    position: absolute;
+    z-index: 100;
+}
+
+#github_btn_dark:hover > #github_reveal_dark {
     /* display: inline; */
     opacity: 1;
     margin: 4px 0 0 0;

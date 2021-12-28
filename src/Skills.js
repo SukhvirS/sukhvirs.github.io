@@ -3,6 +3,8 @@ import RedLogo from './components/RedLogo';
 
 import MyNavbar from './components/MyNavbar';
 import './skills.css';
+import BlueLogo from './components/BlueLogo';
+import storage from 'local-storage-fallback';
 
 class Skills extends React.Component{
 
@@ -10,6 +12,7 @@ class Skills extends React.Component{
     super(props);
     this.state = { width: 0, height: 0 };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.getInitialTheme = this.getInitialTheme.bind(this);
   }
 
   componentDidMount() {
@@ -25,7 +28,13 @@ class Skills extends React.Component{
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
+  getInitialTheme(){
+    const savedTheme = storage.getItem('theme')
+    return savedTheme ? JSON.parse(savedTheme) : {mode:'light'}
+  }
+
   render(){
+    const theme = this.getInitialTheme();
     return(
       <div style={{fontFamily:"Circular"}}>
         <MyNavbar />
@@ -75,10 +84,6 @@ class Skills extends React.Component{
                 <li>jQuery</li>
               </ul>
             </div>
-
-            {/* <div style={{height:'30px', width:'30px', float:'right', bottom:'0', borderRadius:'6px', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div> */}
-
-            <RedLogo />
 
           </div>
           :
@@ -139,7 +144,12 @@ class Skills extends React.Component{
 
             {/* <div style={{height:'30px', width:'30px', bottom:'0', borderRadius:'6px', right:'0', backgroundColor:'red', position:'absolute', margin:'0 10px 10px 0'}}></div> */}
 
-            <RedLogo />
+            {
+              theme.mode == 'dark'?
+              <BlueLogo />
+              :
+              <RedLogo />
+            }
 
           </div>
         }

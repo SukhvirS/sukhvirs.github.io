@@ -5,6 +5,8 @@ import storage from 'local-storage-fallback';
 import './NavbarStyles.css';
 import sun from '../resources/images/sunny-day.png';
 import moon from '../resources/images/moon.png';
+import BlueLogo from './BlueLogo';
+import RedLogo from './RedLogo';
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -54,7 +56,7 @@ class MyNavbar extends React.Component{
 
                 <header className="header">
                   {/** Dark mode switch */}
-                  <div style={{float:"right", margin:"0.5em 2.5em 0 0"}}>
+                  {/* <div style={{float:"right", margin:"0.5em 2.5em 0 0"}}>
                     {
                       theme.mode === 'dark'?
                       <Link className='nav-link' to="#" onClick = {e =>
@@ -69,7 +71,8 @@ class MyNavbar extends React.Component{
                         <img src={moon} alt="Dark Mode" width="25px"/>
                       </Link>
                     }
-                  </div>
+                  </div> */}
+                  <BlueLogo mobile='true'/>
 
                   {/* drop down menu*/}
                   <div style={{padding:"0 2.5em 0 1.5em"}}>
@@ -136,7 +139,7 @@ class MyNavbar extends React.Component{
 
                 <header className="header">
                   {/** Dark mode switch */}
-                  <div style={{float:"right", margin:"0.5em 2.5em 0 0"}}>
+                  {/* <div style={{float:"right", margin:"0.5em 2.5em 0 0"}}>
                     {
                       theme.mode === 'dark'?
                       <Link className='nav-link' to="#" onClick = {e =>
@@ -151,7 +154,8 @@ class MyNavbar extends React.Component{
                         <img src={moon} alt="Dark Mode" width="25px"/>
                       </Link>
                     }
-                  </div>
+                  </div> */}
+                  <RedLogo mobile='true' />
 
                   {/* drop down menu*/}
                   <div style={{padding:"0 2.5em 0 1.5em"}}>

@@ -18,6 +18,8 @@ import chess from './resources/images/chess/main.png';
 
 import './experience.css';
 import RedLogo from './components/RedLogo';
+import storage from 'local-storage-fallback';
+import BlueLogo from './components/BlueLogo';
 
 class Experience extends React.Component{
 
@@ -45,6 +47,7 @@ class Experience extends React.Component{
     this.toggleYelpRecommenderCollapse = this.toggleYelpRecommenderCollapse.bind(this);
     this.toggleSSAICollapse = this.toggleSSAICollapse.bind(this);
     this.toggleAbstractReasoningCollapse = this.toggleAbstractReasoningCollapse.bind(this);
+    this.getInitialTheme = this.getInitialTheme.bind(this);
   }
 
   componentDidMount() {
@@ -108,7 +111,14 @@ class Experience extends React.Component{
     })
   }
 
+  getInitialTheme(){
+    const savedTheme = storage.getItem('theme')
+    return savedTheme ? JSON.parse(savedTheme) : {mode:'light'}
+  }
+
+
   render(){
+    const theme = this.getInitialTheme();
     return(
       <div style={{fontFamily:"Circular"}}>
         <MyNavbar />
@@ -694,9 +704,12 @@ class Experience extends React.Component{
               </div>
             </div>
             
-            {/* <div style={{height:'30px', width:'30px', float:'right', bottom:'0', borderRadius:'6px', right:'0', backgroundColor:'red', margin:'0 10px 10px 0'}}></div> */}
-            
-            <RedLogo />
+            {
+              theme.mode == 'dark'?
+              <BlueLogo />
+              :
+              <RedLogo />
+            }
 
           </div>
         }
