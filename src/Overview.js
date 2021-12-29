@@ -1,17 +1,20 @@
 import React from 'react';
 
 import MyNavbar from './components/MyNavbar'
-import profileImage from './resources/images/profileImage3.jpg';
+// import profileImage from './resources/images/profileImage3.jpg';
 import storage from 'local-storage-fallback';
-import email_dark from './resources/images/email_dark.png';
-import email_light from './resources/images/email_light.png';
-import github_dark from './resources/images/github_dark.png';
-import github_light from './resources/images/github_light.png';
-import linkedin_dark from './resources/images/linkedin_dark.png';
-import linkedin_light from './resources/images/linkedin_light.png';
+// import email_dark from './resources/images/email_dark.png';
+// import email_light from './resources/images/email_light.png';
+// import github_dark from './resources/images/github_dark.png';
+// import github_light from './resources/images/github_light.png';
+// import linkedin_dark from './resources/images/linkedin_dark.png';
+// import linkedin_light from './resources/images/linkedin_light.png';
 import './Overview.css';
 import RedLogo from './components/RedLogo';
 import BlueLogo from './components/BlueLogo';
+
+import TypeIt from "typeit-react";
+
 
 class Overview extends React.Component{
 
@@ -45,8 +48,25 @@ class Overview extends React.Component{
 
   render(){
     const theme = this.getInitialTheme();
+
+    // <Typewriter
+    //   onInit={(typewriter) => {
+    //     typewriter.typeString('Hello World!')
+    //       .callFunction(() => {
+    //         console.log('String typed out!');
+    //       })
+    //       .pauseFor(2500)
+    //       .deleteAll()
+    //       .callFunction(() => {
+    //         console.log('All strings were deleted');
+    //       })
+    //       .start();
+    //   }}
+    // />
+
+
     return(
-      <div style={{fontFamily:"Circular"}}>
+      <div style={{fontFamily:"Circular"}} className='Overview_page'>
         <MyNavbar />
         {
           this.state.width < 750 ?
@@ -65,8 +85,8 @@ class Overview extends React.Component{
 
             <hr style={{borderTop:'1px solid #d4d4d4'}}/>
 
-            <p style={{fontSize:"3vw", fontSize:"5vw", color:"gray"}}>
-              I'm a <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>software engineer</span> experienced in building full-stack machine learning applications using big data. Proficient in every step of the <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>machine learning</span> pipeline, from data collection and preprocessing to model deployment and maintenance.
+            <p style={{fontSize:"5vw", color:"gray"}}>
+              I'm a <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>software engineer</span> experienced in building full-stack machine learning applications using big data. I'm proficient in every step of the <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>machine learning</span> pipeline, from data collection and preprocessing to model deployment and maintenance.
             </p>
             <br/>
 
@@ -89,7 +109,7 @@ class Overview extends React.Component{
                     </div>
                   </a>
 
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank'>
+                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer">
                     <div id='linkedin_btn_dark' style={{width:'100%', margin:'0 0 6px 0'}}>
 
                       <span style={{display:'inline-flex', verticalAlign:'middle'}}>
@@ -105,7 +125,7 @@ class Overview extends React.Component{
                   </a>
 
 
-                  <a href='https://github.com/SukhvirS' target='_blank'>
+                  <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
                     <div id='github_btn_dark' style={{width:'100%', margin:'0 0 20px 0'}}>
 
                       <span style={{display:'inline-flex', verticalAlign:'middle'}}>
@@ -139,7 +159,7 @@ class Overview extends React.Component{
                     </div>
                   </a>
 
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank'>
+                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer">
                     <div id='linkedin_btn' style={{width:'100%', margin:'0 0 6px 0'}}>
                       
                       <span style={{display:'inline-flex', verticalAlign:'middle'}}>
@@ -155,7 +175,7 @@ class Overview extends React.Component{
                     </div>
                   </a>
 
-                  <a href='https://github.com/SukhvirS' target='_blank'>
+                  <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
                     <div id='github_btn' style={{width:'100%', margin:'0 0 20px 0'}}>
 
                       <span style={{display:'inline-flex', verticalAlign:'middle'}}>
@@ -180,13 +200,66 @@ class Overview extends React.Component{
             <div style={{margin:'0 12vw'}}>
               {/* <p style={{fontSize:"calc(2.563vw + 25px)", height:'6.5vw', margin:'0px 0 0 0'}}>Sukhvir Singh</p> */}
 
-              <p style={{fontSize:"32px", color:"gray", padding:'0 0 0 2px'}}>
-                I'm a <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>software engineer</span> experienced in building full-stack machine learning applications using big data. Proficient in every step of the <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>machine learning</span> pipeline, from data collection and preprocessing to model deployment and maintenance.
-              </p>
+              <div style={{fontSize:"32px", color:"gray", padding:'0 0 0 2px'}}>
+                
+                {/* <p id='hi'></p> */}
+                <p>Hi,</p>
+                <p>
+                  <span>I'm a </span>
+                  <span id='first_placeholder'>_</span>
 
-              <br/>
-              <br/>
+                  <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}> 
+                    <TypeIt
+                      getBeforeInit={(instance) => {
+                        instance.type("").pause(800).exec(() => {document.getElementById('first_placeholder').style.display = 'none'}).type("software engineer");
+                        return instance;
+                      }}
+                      options={{
+                        speed: 40,
+                        cursor: false,
+                      }}
+                      />
+                  </span>
+                  
+                  <span> and </span>
+                  <span id='second_placeholder'>_</span>
 
+                  <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}> 
+                    <TypeIt
+                      getBeforeInit={(instance) => {
+                        instance.type("").pause(2000).exec(() => {document.getElementById('second_placeholder').style.display = 'none'}).type("data scientist");
+                        return instance;
+                      }}
+                      options={{
+                        cursor: false,
+                        speed: 40
+                      }}/>
+                  </span>
+
+                  <span> experienced in building full-stack machine learning applications using big data. I'm proficient in every step of the </span>
+
+                  <span id='third_placeholder'>_</span>
+
+                  <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>
+                    <TypeIt
+                      getBeforeInit={(instance) => {
+                        instance.type("").pause(4000).exec(() => {document.getElementById('third_placeholder').style.display = 'none'}).type("machine learning");
+                        return instance;
+                      }}
+                      options={{
+                        cursor: false,
+                        speed: 40
+                      }}/>
+                  </span>
+                  
+                  <span> pipeline, from data collection and preprocessing to model deployment and maintenance.
+                  </span>
+                </p>
+
+                <p>More about me:</p>
+                
+              
+              </div>
 
               {
                 theme.mode == 'dark'?
@@ -200,7 +273,7 @@ class Overview extends React.Component{
                     </div>
                   </a>
 
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' style={{margin:'0 10px'}}>
+                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" style={{margin:'0 10px'}}>
                     <div id='linkedin_btn_dark'>
                       <span id='linkedin_label_dark'>LinkedIn</span>
                       <span id='linkedin_reveal_dark'>Sukhvir Singh</span>
@@ -209,7 +282,7 @@ class Overview extends React.Component{
                   </a>
 
 
-                  <a href='https://github.com/SukhvirS' target='_blank'>
+                  <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
                     <div id='github_btn_dark'>
                         <span id='github_label_dark'>GitHub</span>
                         <span id='github_reveal_dark'>SukhvirS</span>
@@ -231,7 +304,7 @@ class Overview extends React.Component{
                     </div>
                   </a>
 
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' style={{margin:'0 10px'}}>
+                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" style={{margin:'0 10px'}}>
                     <div id='linkedin_btn'>
                       <span id='linkedin_label'>LinkedIn</span>
                       <span id='linkedin_reveal'>Sukhvir Singh</span>
@@ -239,7 +312,7 @@ class Overview extends React.Component{
                     </div>
                   </a>
 
-                  <a href='https://github.com/SukhvirS' target='_blank'>
+                  <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
                     <div id='github_btn'>
                         <span id='github_label'>GitHub</span>
                         <span id='github_reveal'>SukhvirS</span>
@@ -251,6 +324,10 @@ class Overview extends React.Component{
 
                 </div>
               }
+
+              <br/>
+              <br/>
+              {/* <p id='thanks' style={{fontSize:"32px", color: theme.mode === 'light' ? 'black' : '#eeeeee', padding:'0 0 0 2px'}}></p> */}
             </div>
           </div>
         }
@@ -260,12 +337,12 @@ class Overview extends React.Component{
   }
 }
 
-const styles = {
-  imageStyle:{
-    float:"left",
-    width:"calc((100vw + 30px) / 150 * 74.5)",
-    padding:"4vh"
-  },
-}
+// const styles = {
+//   imageStyle:{
+//     float:"left",
+//     width:"calc((100vw + 30px) / 150 * 74.5)",
+//     padding:"4vh"
+//   },
+// }
 
 export default Overview

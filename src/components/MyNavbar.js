@@ -241,7 +241,10 @@ class MyNavbar extends React.Component{
                       </Link>
                     }
                   </div> */}
-                  <p style={{fontSize:'calc(1.563vw + 20px)', padding:'10px 0 0 10px'}}>Sukhvir Singh</p>
+                  <p style={{fontSize:'calc(1.563vw + 20px)', padding:'10px 0 0 10px'}}>
+                    {/* <span id='name'></span> */}
+                    Sukhvir Singh
+                  </p>
 
                   {/* Navigatioin buttons*/}
                   <div style={{position:"absolute", right:"0"}}>
