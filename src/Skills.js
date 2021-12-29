@@ -91,12 +91,47 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 26px'}}>Machine Learning / Data Science</h1>
+                <h1 style={{float:"left"}}>Machine Learning / Data Science</h1>
                 <br/>
                 <br/>
-                <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
-                <div style={{fontSize:'20px', margin:'28px'}}>
-                  Python &nbsp;&nbsp;&nbsp;
+                {/* <hr style={{borderTop:'1px solid #3d3d3d', width:'75vw'}}/> */}
+                {
+                  theme.mode == 'dark'?
+                  <hr style={{borderTop:'1px solid #3d3d3d', width: '75vw'}} />
+                  :
+                  <hr style={{borderTop:'1px solid #d4d4d4', width: '75vw'}} />
+                }
+                <div style={{fontSize:'20px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>Python</li>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>Scikit-learn</li>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>PyTorch</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>SQL</li>
+                    <li>Seaborn</li>
+                    <li>Plotly</li>
+                    <li>OpenCV</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>AWS</li>
+                    <li>GCP</li>
+                    <li>Jupyter</li>
+                  </ul>
+                  
+
+                  {/* Python &nbsp;&nbsp;&nbsp;
                   NumPy &nbsp;&nbsp;&nbsp;
                   Pandas &nbsp;&nbsp;&nbsp;
                   Scikit-learn &nbsp;&nbsp;&nbsp;
@@ -110,7 +145,7 @@ class Skills extends React.Component{
                   Jupyter &nbsp;&nbsp;&nbsp;
                   SQL &nbsp;&nbsp;&nbsp;
                   AWS &nbsp;&nbsp;&nbsp;
-                  GCP &nbsp;&nbsp;&nbsp;
+                  GCP &nbsp;&nbsp;&nbsp; */}
                 </div>
 
               </div>
@@ -119,12 +154,39 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left", margin:'0 0 0 26px'}}>Other</h1>
+                <h1 style={{float:"left"}}>Other</h1>
                 <br/>
                 <br/>
-                <hr style={{borderTop:'1px solid #d4d4d4', width:'75vw'}}/>
-                <div style={{fontSize:'20px', margin:'28px'}}>
-                  Java &nbsp;&nbsp;&nbsp;
+                {/* <hr style={{borderTop:'1px solid #3d3d3d', width:'75vw'}}/> */}
+                {
+                  theme.mode == 'dark'?
+                  <hr style={{borderTop:'1px solid #3d3d3d', width: '75vw'}} />
+                  :
+                  <hr style={{borderTop:'1px solid #d4d4d4', width: '75vw'}} />
+                }
+                <div style={{fontSize:'20px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>HTML / CSS</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>jQuery</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>React.js</li>
+                    <li>Bootstrap</li>
+                    <li>Semantic UI</li>
+                    <li>Flask</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>RESTFUL APIs</li>
+                    <li>Heroku</li>
+                    <li>CI / CD</li>
+                  </ul>
+
+                  {/* Java &nbsp;&nbsp;&nbsp;
                   HTML/CSS &nbsp;&nbsp;&nbsp;
                   Javascript &nbsp;&nbsp;&nbsp;
                   PHP &nbsp;&nbsp;&nbsp;
@@ -137,7 +199,8 @@ class Skills extends React.Component{
                   Bootstrap &nbsp;&nbsp;&nbsp;
                   Semantic UI &nbsp;&nbsp;&nbsp;
                   Leaflet &nbsp;&nbsp;&nbsp;
-                  jQuery &nbsp;&nbsp;&nbsp;
+                  jQuery &nbsp;&nbsp;&nbsp; */}
+
                 </div>
               </div>
             </div>

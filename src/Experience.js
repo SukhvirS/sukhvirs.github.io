@@ -21,6 +21,11 @@ import RedLogo from './components/RedLogo';
 import storage from 'local-storage-fallback';
 import BlueLogo from './components/BlueLogo';
 
+import grey_up_arrow from './resources/images/grey_up_arrow.png';
+import grey_down_arrow from './resources/images/grey_down_arrow.png'
+import white_up_arrow from './resources/images/white_up_arrow.png';
+import white_down_arrow from './resources/images/white_down_arrow.png'
+
 class Experience extends React.Component{
 
   constructor(props) {
@@ -126,7 +131,12 @@ class Experience extends React.Component{
           this.state.width < 750 ?
           <div style={{padding:"0 3.5em 2em 2.7em", marginTop:"100px"}}>
             <h4 style={{margin:"1em 0 0 0"}}>Work</h4>
-            <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
+            {
+              theme.mode == 'dark'?
+              <hr style={{borderTop:'1px solid #3d3d3d', marginBottom:'-10px'}} />
+              :
+              <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
+            }
 
 
             {/* SSAI */}
@@ -139,6 +149,7 @@ class Experience extends React.Component{
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jun 2021 - Aug 2021</h4></li>
                   </ul>
                 </div>
+
                 {
                   this.state.ssaiCollapse ?
                   <img src={up} alt="Up" width="30px" style={{float:"right"}}/>
@@ -212,7 +223,13 @@ class Experience extends React.Component{
 
 
             <h4 style={{margin:"2em 0 0 0"}}>Projects</h4>
-            <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
+            {/* <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} /> */}
+            {
+              theme.mode == 'dark'?
+              <hr style={{borderTop:'1px solid #3d3d3d', marginBottom:'-10px'}} />
+              :
+              <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
+            }
 
             {/* ML abstract reasoning */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
@@ -246,12 +263,12 @@ class Experience extends React.Component{
             </div>
 
 
-            {/* Chess AI */}
+            {/* Bishop AI */}
             <div style={{display:"flex", margin:"10px 0 0 0"}}>
               <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseChess" onClick={this.toggleChessCollapse} >
                 <div style={{float:"left", width:"60%"}}>
                   <ul style={{listStyleType:"none", padding:"0"}}>
-                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Chess AI</h1></li>
+                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>Bishop AI</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Machine Learning Engineer</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Jan 2019 - Dec 2019</h4></li>
                   </ul>
@@ -272,7 +289,7 @@ class Experience extends React.Component{
                 <a href="https://github.com/dmilin1/BishopAI" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
                   https://github.com/dmilin1/BishopAI
                 </a>
-                <img src={chess} alt="Chess AI" width="100%"/>
+                <img src={chess} alt="Bishop AI" width="100%"/>
                 <br/>
                 <br/>
               </div>
@@ -451,7 +468,13 @@ class Experience extends React.Component{
             <div style={{display:"flex", justifyContent:"center"}}>
               <div style={{width:"80vw"}}>
                 <h4 style={{margin:"10px 0 16px 30px"}}>Work</h4>
-                <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/>
+                {/* <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/> */}
+                {
+                  theme.mode == 'dark'?
+                  <hr style={{borderTop:'1px solid #3d3d3d', width: '76vw'}} />
+                  :
+                  <hr style={{borderTop:'1px solid #d4d4d4', width: '76vw'}} />
+                }
 
                 {/* SSAI */}
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
@@ -506,7 +529,13 @@ class Experience extends React.Component{
             <div style={{display:"flex", justifyContent:"center", margin:"4em 0 0 0"}}>
               <div style={{width:"80%", margin:"1em 0 0 0"}}>
                 <h4 style={{width:"80%", margin:"16px 0 16px 30px"}}>Projects</h4>
-                <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/>
+                {/* <hr style={{borderTop:'1px solid #d4d4d4', width:'76vw'}}/> */}
+                {
+                  theme.mode == 'dark'?
+                  <hr style={{borderTop:'1px solid #3d3d3d', width: '76vw'}} />
+                  :
+                  <hr style={{borderTop:'1px solid #d4d4d4', width: '76vw'}} />
+                }
               </div>
             </div>
 
@@ -523,38 +552,111 @@ class Experience extends React.Component{
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
-                    Machine learning models that can pass visual IQ tests (<a href='https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices' target="_blank">Raven's Progressive Matrices</a>) at an 80% success rate, showing the model's ability to learn the underlying patterns.
-                    <br/>
-                    <a href="https://github.com/alisaeidi92/distracting_feature" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
-                      https://github.com/alisaeidi92/distracting_feature
+                    <p>
+                      Machine learning models that can pass visual IQ tests, also known as Raven's Progressive Matrices (RPMs), at an 80% success rate, showing the model's ability to learn the underlying patterns.
+                    </p>
+
+                    {
+                      theme.mode == 'dark'?
+                      <a href='https://github.com/alisaeidi92/distracting_feature' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn_dark' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label_dark'>GitHub Repo</span>
+                          <span id='linkedin_reveal_dark'>distracting_feature</span>
+                          <div id='linkedin_image_dark' />
+                        </div>
+                      </a>
+                      :
+                      <a href='https://github.com/alisaeidi92/distracting_feature' target='_blank' rel="noopener noreferrer">
+                      <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                        <span id='linkedin_label'>GitHub Repo</span>
+                        <span id='linkedin_reveal'>distracting_feature</span>
+                        <div id='linkedin_image' />
+                      </div>
                     </a>
+                  }
+
+                    {/* <a href='https://github.com/alisaeidi92/distracting_feature' target='_blank' rel="noopener noreferrer">
+                      <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                        <span id='linkedin_label'>GitHub Repo</span>
+                        <span id='linkedin_reveal'>distracting_feature</span>
+                        <div id='linkedin_image' />
+                      </div>
+                    </a> */}
+
+                    <br/>
+
+                    {
+                      theme.mode == 'dark'?
+                      <a href='https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn_dark' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label_dark'>Visual IQ Tests</span>
+                          <span id='linkedin_reveal_dark'>Visual IQ Tests</span>
+                          <div id='linkedin_image_dark' />
+                        </div>
+                      </a>
+                      :
+                      <a href='https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices' target='_blank' rel="noopener noreferrer">
+                      <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                        <span id='linkedin_label'>GitHub Repo</span>
+                        <span id='linkedin_reveal'>Visual IQ Tests</span>
+                        <div id='linkedin_image' />
+                      </div>
+                    </a>
+                    }
+
                   </p>
-                  <img src="https://prod-cdn-assessment-blob.azureedge.net/cache/d/f/d/d/6/4/dfdd64bd4dbfb61a974afa09f32a8f375fab5257.png" width="100%" alt="Sample Raven's Progressive Matrix"/>
+                  <img src="https://prod-cdn-assessment-blob.azureedge.net/cache/d/f/d/d/6/4/dfdd64bd4dbfb61a974afa09f32a8f375fab5257.png" width="100%" alt="Sample Raven's Progressive Matrix" style={{border:'2px solid #c9c9c9'}}/>
                 </div>
               </div>
             </div>
 
 
-            {/* Chess AI */}
+            {/* Bishop AI */}
             <div style={{display:"flex", justifyContent:"center", margin:"0 0 4em 0"}}>
               <div style={{width:"80%", margin:'1em 0 0 0'}}>
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
                   <ul style={{listStyleType:"none"}}>
-                    <li><h1 style={{float:"left", width:"100%"}}>Chess AI</h1></li>
+                    <li><h1 style={{float:"left", width:"100%"}}>Bishop AI</h1></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Machine Learning Engineer</h4></li>
                     <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Jan 2019 - Dec 2019</h4></li>
                   </ul>
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
-                    An AI capable enough to beat the average chess player. Our model was built using Convolutional Neural Networks and trained
-                    on thousands of high level human Chess games.
-                    <br/>
-                    <a href="https://github.com/dmilin1/BishopAI" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
-                      https://github.com/dmilin1/BishopAI
-                    </a>
+                    <p>
+                      An AI capable enough to beat the average chess player. Our model was built using Convolutional Neural Networks and trained on thousands of high level human chess games.
+                    </p>
+
+                    {
+                      theme.mode == 'dark'?
+                      <a href='https://github.com/dmilin1/BishopAI' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn_dark' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label_dark'>GitHub Repo</span>
+                          <span id='linkedin_reveal_dark'>BishopAI</span>
+                          <div id='linkedin_image_dark' />
+                        </div>
+                      </a>
+                      :
+                      <a href='https://github.com/dmilin1/BishopAI' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label'>GitHub Repo</span>
+                          <span id='linkedin_reveal'>BishopAI</span>
+                          <div id='linkedin_image' />
+                        </div>
+                      </a>
+                    }
+                    
+
+                    {/* <a href='https://github.com/dmilin1/BishopAI' target='_blank' rel="noopener noreferrer">
+                      <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                        <span id='linkedin_label'>GitHub Repo</span>
+                        <span id='linkedin_reveal'>BishopAI</span>
+                        <div id='linkedin_image' />
+                      </div>
+                    </a> */}
+
                   </p>
-                  <img src={chess} width="100%" alt="Chess AI"/>
+                  <img src={chess} width="100%" alt="Bishop AI" style={{border:'2px solid #c9c9c9'}}/>
                 </div>
               </div>
             </div>
@@ -572,8 +674,36 @@ class Experience extends React.Component{
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
-                    A business recommendation system built using collaborative filtering and content-based algorithms and trained on the <a href="https://www.yelp.com/dataset">Yelp Academic dataset</a>.
+                    A business recommendation system built using collaborative filtering and content-based algorithms and trained on the Yelp Academic dataset.
                   </p>
+
+
+                  {
+                      theme.mode == 'dark'?
+                      <a href='https://www.yelp.com/dataset' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn_dark' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label_dark'>Yelp dataset</span>
+                          <span id='linkedin_reveal_dark'>Yelp Academic dataset</span>
+                          <div id='linkedin_image_dark' />
+                        </div>
+                      </a>
+                      :
+                      <a href='https://www.yelp.com/dataset' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label'>Yelp dataset</span>
+                          <span id='linkedin_reveal'>Yelp Academic dataset</span>
+                          <div id='linkedin_image' />
+                        </div>
+                      </a>
+                    }
+
+                  {/* <a href='https://www.yelp.com/dataset' target='_blank' rel="noopener noreferrer">
+                    <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                      <span id='linkedin_label'>Yelp dataset</span>
+                      <span id='linkedin_reveal'>Yelp Academic dataset</span>
+                      <div id='linkedin_image' />
+                    </div>
+                  </a> */}
                   
                 </div>
               </div>
@@ -592,12 +722,30 @@ class Experience extends React.Component{
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
-                    An employee management web application suitable for large companies. It offers useful functions such as add, delete, edit, sort, and search.
-                    We used React.js and Bootstrap for frontend, MongoDB for backend, and Auth0 for user authentication.
-                    <br/>
-                    <a href="https://github.com/shawnsuarez/cmpe172-atom" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
-                      github.com/shawnsuarez/cmpe172-atom
-                    </a>
+                    <p>
+                      An employee management web application suitable for large companies. It offers useful functions such as add, delete, edit, sort, and search. We used React.js and Bootstrap for frontend, MongoDB for backend, and Auth0 for user authentication.
+                    </p>
+
+                    {
+                      theme.mode == 'dark'?
+                      <a href='https://github.com/shawnsuarez/cmpe172-atom' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn_dark' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label_dark'>GitHub Repo</span>
+                          <span id='linkedin_reveal_dark'>Atom Payroll</span>
+                          <div id='linkedin_image_dark' />
+                        </div>
+                      </a>
+                      :
+                      <a href='https://github.com/shawnsuarez/cmpe172-atom' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label'>GitHub Repo</span>
+                          <span id='linkedin_reveal'>Atom Payroll</span>
+                          <div id='linkedin_image' />
+                        </div>
+                      </a>
+                    }
+
+
                   </p>
                   <div id="atomIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
@@ -659,13 +807,29 @@ class Experience extends React.Component{
                 </div>
                 <div style={{float:"right", width:"56%", textAlign:"left"}}>
                   <p style={{fontSize:"20px"}}>
-                    An online alternative to Safeway that allows users to buy groceries and common household items easily by search or sorting
-                    by categories. Users can create an account to save items in their shopping cart and view their purchase history.
-                    We used React.js, Bootstrap, and SemanticUI for frontend and MongoDB for backend.
-                    <br/>
-                    <a href="https://github.com/dmilin1/SaferWay" alt="GitHub Link" target="_blank" rel="noopener noreferrer" style={{color:"gray"}}>
-                      github.com/dmilin1/SaferWay
-                    </a>
+                    <p>
+                      An online alternative to Safeway that allows users to buy groceries and common household items easily by search or sorting by categories. Users can create an account to save items in their shopping cart and view their purchase history. We used React.js, Bootstrap, and SemanticUI for frontend and MongoDB for backend.
+                    </p>
+
+                    {
+                      theme.mode == 'dark'?
+                      <a href='https://github.com/dmilin1/SaferWay' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn_dark' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label_dark'>GitHub Repo</span>
+                          <span id='linkedin_reveal_dark'>Saferway</span>
+                          <div id='linkedin_image_dark' />
+                        </div>
+                      </a>
+                      :
+                      <a href='https://github.com/dmilin1/SaferWay' target='_blank' rel="noopener noreferrer">
+                        <div id='linkedin_btn' style={{fontSize:'18px'}}>
+                          <span id='linkedin_label'>GitHub Repo</span>
+                          <span id='linkedin_reveal'>Saferway</span>
+                          <div id='linkedin_image' />
+                        </div>
+                      </a>
+                    }
+
                   </p>
                   <div id="saferwayIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">

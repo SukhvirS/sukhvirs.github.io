@@ -524,3 +524,28 @@ article h1{
     display: none;
   }
 }
+
+
+.nav-link {
+	color: grey;
+}
+
+#nav-link-light {
+	color: grey;
+	transition: color .5s;
+}
+
+#nav-link-dark {
+	color: grey;
+	transition: color .5s;
+}
+
+#nav-link-light:hover {
+	color: black;
+	transition: color .5s;
+}
+
+#nav-link-dark:hover{
+	color: #eeeeee;
+	transition: color .5s;
+}

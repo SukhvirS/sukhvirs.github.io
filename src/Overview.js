@@ -49,22 +49,6 @@ class Overview extends React.Component{
   render(){
     const theme = this.getInitialTheme();
 
-    // <Typewriter
-    //   onInit={(typewriter) => {
-    //     typewriter.typeString('Hello World!')
-    //       .callFunction(() => {
-    //         console.log('String typed out!');
-    //       })
-    //       .pauseFor(2500)
-    //       .deleteAll()
-    //       .callFunction(() => {
-    //         console.log('All strings were deleted');
-    //       })
-    //       .start();
-    //   }}
-    // />
-
-
     return(
       <div style={{fontFamily:"Circular"}} className='Overview_page'>
         <MyNavbar />
@@ -96,46 +80,24 @@ class Overview extends React.Component{
                   
                   <a href="mailto:sukhvir23singh@gmail.com">
                     <div id='email_btn_dark' style={{width:'100%', margin:'6px 0'}}>
-
-                      <span style={{display:'inline-flex', verticalAlign:'middle'}}>
-                        <span style={{color:'grey'}}>Email</span>
-                        {/* &nbsp;&nbsp; */}
-                        {/* <span style={{color:'#eeeeee'}}>sukhvir23singh@gmail.com</span> */}
-                      </span>
-
-                        {/* <span id='email_label_dark'>Email</span>
-                        <span id='email_reveal_dark'>sukhvir23singh@gmail.com</span> */}
+                        <span id='email_label_dark' style={{color: 'grey'}}>Email</span>
+                        <span id='email_reveal_dark'>Email</span>
                         <div id='email_image_dark'></div>                      
                     </div>
                   </a>
 
                   <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer">
                     <div id='linkedin_btn_dark' style={{width:'100%', margin:'0 0 6px 0'}}>
-
-                      <span style={{display:'inline-flex', verticalAlign:'middle'}}>
-                        <span style={{color:'grey'}}>LinkedIn</span>
-                        {/* &nbsp;&nbsp;
-                        <span style={{color:'#eeeeee'}}>Sukhvir Singh</span> */}
-                      </span>
-
-                      {/* <span id='linkedin_label_dark'>LinkedIn</span>
-                      <span id='linkedin_reveal_dark'>Sukhvir Singh</span> */}
+                      <span id='linkedin_label_dark' style={{color:'grey'}}>LinkedIn</span>
+                      <span id='linkedin_reveal_dark'>LinkedIn</span>
                       <div id='linkedin_image_dark' />
                     </div>
                   </a>
 
-
                   <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
                     <div id='github_btn_dark' style={{width:'100%', margin:'0 0 20px 0'}}>
-
-                      <span style={{display:'inline-flex', verticalAlign:'middle'}}>
-                        <span style={{color:'grey'}}>GitHub</span>
-                        {/* &nbsp;&nbsp;
-                        <span style={{color:'#eeeeee'}}>SukhvirS</span> */}
-                      </span>
-
-                        {/* <span id='github_label_dark'>GitHub</span>
-                        <span id='github_reveal_dark'>SukhvirS</span> */}
+                        <span id='github_label_dark' style={{color:'grey'}}>GitHub</span>
+                        <span id='github_reveal_dark'>GitHub</span>
                         <div id='github_image_dark' />
                       </div>
                   </a>
@@ -143,54 +105,29 @@ class Overview extends React.Component{
                 </div>
                 :
                 <div>
-
                   <a href="mailto:sukhvir23singh@gmail.com">
-                    <div id='email_btn' style={{width:'100%', margin:'6px 0',}}>
-
-                      <span style={{display:'inline-flex', verticalAlign:'middle'}}>
-                        {/* <span style={{color:'grey'}}>@</span>
-                        &nbsp;&nbsp;
-                        <span>sukhvir23singh@gmail.com</span> */}
-                        <span>Email</span>
-                      </span>
-                        {/* <span id='email_label'>Email</span>
-                        <span id='email_reveal'>sukhvir23singh@gmail.com</span> */}
+                    <div id='email_btn' style={{width: '100%', margin:'6px 0'}}>
+                        <span id='email_label'>Email</span>
+                        <span id='email_reveal'>Email</span>
                         <div id='email_image'></div>                      
                     </div>
                   </a>
 
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer">
-                    <div id='linkedin_btn' style={{width:'100%', margin:'0 0 6px 0'}}>
-                      
-                      <span style={{display:'inline-flex', verticalAlign:'middle'}}>
-                        {/* <span style={{color:'grey'}}>LinkedIn</span>
-                        &nbsp;&nbsp;
-                        <span>Sukhvir Singh</span> */}
-                        <span>LinkedIn</span>
-                      </span>
-
-                      {/* <span id='linkedin_label'>LinkedIn</span>
-                      <span id='linkedin_reveal'>Sukhvir Singh</span> */}
+                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" >
+                    <div id='linkedin_btn' style={{width: '100%', margin:'0 0 6px 0'}}>
+                      <span id='linkedin_label'>LinkedIn</span>
+                      <span id='linkedin_reveal'>LinkedIn</span>
                       <div id='linkedin_image' />
                     </div>
                   </a>
 
                   <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
-                    <div id='github_btn' style={{width:'100%', margin:'0 0 20px 0'}}>
-
-                      <span style={{display:'inline-flex', verticalAlign:'middle'}}>
-                        {/* <span style={{color:'grey'}}>GitHub</span>
-                        &nbsp;&nbsp;
-                        <span>SukhvirS</span> */}
-                        <span>GitHub</span>
-                      </span>
-
-                        {/* <span id='github_label'>GitHub</span>
-                        <span id='github_reveal'>SukhvirS</span> */}
+                    <div id='github_btn' style={{width: '100%', margin:'0 0 20px 0'}}>
+                        <span id='github_label'>GitHub</span>
+                        <span id='github_reveal'>GitHub</span>
                         <div id='github_image' />                        
                       </div>
                   </a>
-
                 </div>
               }
 
@@ -243,7 +180,7 @@ class Overview extends React.Component{
                   <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>
                     <TypeIt
                       getBeforeInit={(instance) => {
-                        instance.type("").pause(4000).exec(() => {document.getElementById('third_placeholder').style.display = 'none'}).type("machine learning");
+                        instance.type("").pause(3200).exec(() => {document.getElementById('third_placeholder').style.display = 'none'}).type("machine learning");
                         return instance;
                       }}
                       options={{
@@ -263,62 +200,66 @@ class Overview extends React.Component{
 
               {
                 theme.mode == 'dark'?
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
-                  
-                  <a href="mailto:sukhvir23singh@gmail.com">
-                    <div id='email_btn_dark'>
-                        <span id='email_label_dark'>Email</span>
-                        <span id='email_reveal_dark'>sukhvir23singh@gmail.com</span>
-                        <div id='email_image_dark'></div>                      
-                    </div>
-                  </a>
-
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" style={{margin:'0 10px'}}>
-                    <div id='linkedin_btn_dark'>
-                      <span id='linkedin_label_dark'>LinkedIn</span>
-                      <span id='linkedin_reveal_dark'>Sukhvir Singh</span>
-                      <div id='linkedin_image_dark' />
-                    </div>
-                  </a>
-
-
-                  <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
-                    <div id='github_btn_dark'>
-                        <span id='github_label_dark'>GitHub</span>
-                        <span id='github_reveal_dark'>SukhvirS</span>
-                        <div id='github_image_dark' />
+                <div>
+                  <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                    
+                    <a href="mailto:sukhvir23singh@gmail.com">
+                      <div id='email_btn_dark'>
+                          <span id='email_label_dark'>Email</span>
+                          <span id='email_reveal_dark'>sukhvir23singh@gmail.com</span>
+                          <div id='email_image_dark'></div>                      
                       </div>
-                  </a>
+                    </a>
 
+                    <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" style={{margin:'0 10px'}}>
+                      <div id='linkedin_btn_dark'>
+                        <span id='linkedin_label_dark'>LinkedIn</span>
+                        <span id='linkedin_reveal_dark'>Sukhvir Singh</span>
+                        <div id='linkedin_image_dark' />
+                      </div>
+                    </a>
+
+
+                    <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
+                      <div id='github_btn_dark'>
+                          <span id='github_label_dark'>GitHub</span>
+                          <span id='github_reveal_dark'>SukhvirS</span>
+                          <div id='github_image_dark' />
+                        </div>
+                    </a>
+                  </div>
+                  
                   <BlueLogo />
 
                 </div>
                 :
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                <div>
+                  <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', marginRight:'0'}}>
 
-                  <a href="mailto:sukhvir23singh@gmail.com">
-                    <div id='email_btn'>
-                        <span id='email_label'>Email</span>
-                        <span id='email_reveal'>sukhvir23singh@gmail.com</span>
-                        <div id='email_image'></div>                      
-                    </div>
-                  </a>
-
-                  <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" style={{margin:'0 10px'}}>
-                    <div id='linkedin_btn'>
-                      <span id='linkedin_label'>LinkedIn</span>
-                      <span id='linkedin_reveal'>Sukhvir Singh</span>
-                      <div id='linkedin_image' />
-                    </div>
-                  </a>
-
-                  <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
-                    <div id='github_btn'>
-                        <span id='github_label'>GitHub</span>
-                        <span id='github_reveal'>SukhvirS</span>
-                        <div id='github_image' />                        
+                    <a href="mailto:sukhvir23singh@gmail.com">
+                      <div id='email_btn'>
+                          <span id='email_label'>Email</span>
+                          <span id='email_reveal'>sukhvir23singh@gmail.com</span>
+                          <div id='email_image'></div>                      
                       </div>
-                  </a>
+                    </a>
+
+                    <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer" >
+                      <div id='linkedin_btn'>
+                        <span id='linkedin_label'>LinkedIn</span>
+                        <span id='linkedin_reveal'>Sukhvir Singh</span>
+                        <div id='linkedin_image' />
+                      </div>
+                    </a>
+
+                    <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
+                      <div id='github_btn'>
+                          <span id='github_label'>GitHub</span>
+                          <span id='github_reveal'>SukhvirS</span>
+                          <div id='github_image' />                        
+                        </div>
+                    </a>
+                  </div>
 
                   <RedLogo />
 
@@ -337,12 +278,5 @@ class Overview extends React.Component{
   }
 }
 
-// const styles = {
-//   imageStyle:{
-//     float:"left",
-//     width:"calc((100vw + 30px) / 150 * 74.5)",
-//     padding:"4vh"
-//   },
-// }
 
 export default Overview

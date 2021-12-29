@@ -254,12 +254,11 @@ class MyNavbar extends React.Component{
                       <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
                           window.location.href === "https://sukhvirs.com/" ?
-                          <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'
-                            , borderBottom: theme.mode == 'light' ? '2px solid black' : '2px solid white', margin:'0 0 -2px 0'}}>
+                          <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'}}>
                             HOME
                           </Link>
                           :
-                          <Link className="nav-link" to="/" style={{color: theme.mode === 'light' ? 'black' : 'white'}}>
+                          <Link className="nav-link" to="/" id={theme.mode === 'light'? 'nav-link-light' : 'nav-link-dark'}>
                             HOME
                          </Link>
                         }
@@ -269,11 +268,11 @@ class MyNavbar extends React.Component{
                       <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
                           window.location.href.indexOf("skills")> -1 ?
-                          <Link className="nav-link" to="/skills" style={{color:theme.mode === 'light' ? 'black' : 'white', borderBottom: theme.mode == 'light' ? '2px solid black' : '2px solid white', margin:'0 0 -2px 0', margin:'0 0 -2px 0'}}>
+                          <Link className="nav-link" id='nav-link-skills' to="/skills" style={{color: theme.mode === 'light' ? 'black' : 'white'}}>
                             SKILLS
                           </Link>
                           :
-                          <Link className="nav-link" to="/skills" style={{color:theme.mode === 'light' ? 'black' : 'white'}}>
+                          <Link className="nav-link" id={theme.mode === 'light'? 'nav-link-light' : 'nav-link-dark'} to="/skills" >
                             SKILLS
                           </Link>
                         }
@@ -283,11 +282,11 @@ class MyNavbar extends React.Component{
                       <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
                           window.location.href.indexOf("experience") > -1 ?
-                          <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white', borderBottom: theme.mode == 'light' ? '2px solid black' : '2px solid white', margin:'0 0 -2px 0', margin:'0 0 -2px 0'}}>
+                          <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white'}}>
                             EXPERIENCE
                           </Link>
                           :
-                          <Link className="nav-link" to="/experience" style={{color:theme.mode === 'light' ? 'black' : 'white'}}>
+                          <Link className="nav-link" id={theme.mode === 'light'? 'nav-link-light' : 'nav-link-dark'} to="/experience" >
                             EXPERIENCE
                           </Link>
                         }

@@ -13,9 +13,10 @@ class RedLogo extends React.Component {
   render() {
     return(
         <div>
-          <Link to="#" onClick = {e =>
-                        storage.setItem('theme', JSON.stringify({mode:'dark'}))
-                      }>
+          <Link to="#" onClick = {(e) => {
+                        storage.setItem('theme', JSON.stringify({mode:'dark'}));
+                        window.scrollTo(0, 0);
+          }}>
             {/* border */}
             {/* <div style={{height:'40px', width:'60px', float:'right', bottom:'0', right:'0', borderRadius:'4px 0 0 0', borderTop:'1px solid #111111', borderLeft:'1px solid #111111', position:'fixed'}}></div> */}
 
