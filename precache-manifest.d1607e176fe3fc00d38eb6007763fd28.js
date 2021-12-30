@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "cdc0e3c38c969d968941",
-    "url": "/static/css/main.e2937170.chunk.css"
+    "revision": "66effa9e616d48d24c5f",
+    "url": "/static/css/main.9e41a813.chunk.css"
   },
   {
-    "revision": "cdc0e3c38c969d968941",
-    "url": "/static/js/main.bf9be5cd.chunk.js"
+    "revision": "66effa9e616d48d24c5f",
+    "url": "/static/js/main.98bcea4b.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "90b55baff494b10e0f13",
-    "url": "/static/js/2.f403d63d.chunk.js"
+    "revision": "84e5694009ec8589327e",
+    "url": "/static/js/2.37794e1d.chunk.js"
   },
   {
     "revision": "8fafddc211551f128d69eb5cbcebae75",
@@ -72,14 +72,6 @@ self.__precacheManifest = [
     "url": "/static/media/CircularStd-Book.6365c40a.otf"
   },
   {
-    "revision": "04f15c5114a76988e9db23b27eebec30",
-    "url": "/static/media/sunny-day.04f15c51.png"
-  },
-  {
-    "revision": "980d935d2e6d42dfb5fbf7db02283431",
-    "url": "/static/media/moon.980d935d.png"
-  },
-  {
     "revision": "c83fdd1f674aca68d3491795e46b1c2a",
     "url": "/static/media/black_arrow.c83fdd1f.png"
   },
@@ -92,31 +84,15 @@ self.__precacheManifest = [
     "url": "/static/media/grey_arrow.d97936e7.png"
   },
   {
-    "revision": "f06202c0700c291689914efe9e1d694b",
-    "url": "/static/media/back.f06202c0.png"
-  },
-  {
     "revision": "63499fce609535bca59752fb11004c11",
     "url": "/static/media/next.63499fce.png"
   },
   {
-    "revision": "7f7ff2018238e7570b949da4a553398c",
-    "url": "/static/media/grey_up_arrow.7f7ff201.png"
+    "revision": "f06202c0700c291689914efe9e1d694b",
+    "url": "/static/media/back.f06202c0.png"
   },
   {
-    "revision": "ae82d2191a276e8d6f6609c5e84718a8",
-    "url": "/static/media/grey_down_arrow.ae82d219.png"
-  },
-  {
-    "revision": "ff29a61ee19838838920ef3efeadeeaf",
-    "url": "/static/media/white_up_arrow.ff29a61e.png"
-  },
-  {
-    "revision": "9b9b084c349eb9bf7f6f69cd7dbaaf47",
-    "url": "/static/media/white_down_arrow.9b9b084c.png"
-  },
-  {
-    "revision": "3ea872ad7ee844cda3e00a98874e4252",
+    "revision": "716ed4fee68bacfa66e46663e8d6f02d",
     "url": "/index.html"
   }
 ];
