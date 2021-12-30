@@ -44,6 +44,12 @@ class Skills extends React.Component{
             
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
               <h4 style={{fontSize:"6vw"}}>Machine Learning / Data Science</h4>
+              {
+                theme.mode == 'dark'?
+                <hr style={{borderTop:'1px solid #3d3d3d'}} />
+                :
+                <hr style={{borderTop:'1px solid #d4d4d4'}} />
+              }
               <ul className="mobileUL" style={{float:"left"}}>
                 <li>Python</li>
                 <li>NumPy</li>
@@ -67,6 +73,12 @@ class Skills extends React.Component{
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
               <h4 style={{fontSize:"6vw"}}>Other</h4>
+              {
+                theme.mode == 'dark'?
+                <hr style={{borderTop:'1px solid #3d3d3d'}} />
+                :
+                <hr style={{borderTop:'1px solid #d4d4d4'}} />
+              }
               <ul className="mobileUL" style={{float:"left"}}>
                 <li>Java</li>
                 <li>HTML/CSS</li>

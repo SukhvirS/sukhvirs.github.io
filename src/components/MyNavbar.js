@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 import {ThemeProvider, createGlobalStyle} from 'styled-components';
 import storage from 'local-storage-fallback';
 import './NavbarStyles.css';
-import sun from '../resources/images/sunny-day.png';
-import moon from '../resources/images/moon.png';
+// import sun from '../resources/images/sunny-day.png';
+// import moon from '../resources/images/moon.png';
 import BlueLogo from './BlueLogo';
 import RedLogo from './RedLogo';
 
