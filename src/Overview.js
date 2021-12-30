@@ -69,12 +69,67 @@ class Overview extends React.Component{
 
             <hr style={{borderTop:'1px solid #d4d4d4'}}/>
 
-            <p style={{fontSize:"5vw", color:"gray"}}>
+            {/* <p style={{fontSize:"5vw", color:"gray"}}>
               I'm a <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>software engineer</span> experienced in building full-stack machine learning applications using big data. I'm proficient in every step of the <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>machine learning</span> pipeline, from data collection and preprocessing to model deployment and maintenance.
-            </p>
-            <br/>
+            </p> */}
+            <div style={{color:'grey'}}>
+              <p>Hi,</p>
+                  <p>
+                    <span>I'm a </span>
+                    <span id='first_placeholder'>_</span>
 
-            {
+                    <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}> 
+                      <TypeIt
+                        getBeforeInit={(instance) => {
+                          instance.type("").pause(800).exec(() => {document.getElementById('first_placeholder').style.display = 'none'}).type("software engineer");
+                          return instance;
+                        }}
+                        options={{
+                          speed: 40,
+                          cursor: false,
+                        }}
+                        />
+                    </span>
+                    
+                    <span> experienced in building full-stack web applications from scratch. I'm a </span>
+                    <span id='second_placeholder'>_</span>
+
+                    <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}> 
+                      <TypeIt
+                        getBeforeInit={(instance) => {
+                          instance.type("").pause(2000).exec(() => {document.getElementById('second_placeholder').style.display = 'none'}).type("data scientist");
+                          return instance;
+                        }}
+                        options={{
+                          cursor: false,
+                          speed: 40
+                        }}/>
+                    </span>
+
+                    <span> capable of extracting actionable insights from big data. And I'm a </span>
+
+                    <span id='third_placeholder'>_</span>
+
+                    <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>
+                      <TypeIt
+                        getBeforeInit={(instance) => {
+                          instance.type("").pause(3200).exec(() => {document.getElementById('third_placeholder').style.display = 'none'}).type("machine learning engineer");
+                          return instance;
+                        }}
+                        options={{
+                          cursor: false,
+                          speed: 40
+                        }}/>
+                    </span>
+                    
+                    <span> adept at the full machine pipeline, from data collection and preprocessing to model deployment and maintenance.
+                    </span>
+                  </p>
+
+                  <p>More about me:</p>
+                </div>
+
+              {
                 theme.mode == 'dark'?
                 <div>
                   
@@ -135,11 +190,9 @@ class Overview extends React.Component{
           :
           <div>
             <div style={{margin:'0 12vw'}}>
-              {/* <p style={{fontSize:"calc(2.563vw + 25px)", height:'6.5vw', margin:'0px 0 0 0'}}>Sukhvir Singh</p> */}
 
-              <div style={{fontSize:"32px", color:"gray", padding:'0 0 0 2px'}}>
-                
-                {/* <p id='hi'></p> */}
+              <div style={{fontSize:"32px", color:"grey", padding:'0 0 0 2px'}}>
+
                 <p>Hi,</p>
                 <p>
                   <span>I'm a </span>
@@ -158,7 +211,7 @@ class Overview extends React.Component{
                       />
                   </span>
                   
-                  <span> and </span>
+                  <span> experienced in building full-stack web applications from scratch. I'm a </span>
                   <span id='second_placeholder'>_</span>
 
                   <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}> 
@@ -173,14 +226,14 @@ class Overview extends React.Component{
                       }}/>
                   </span>
 
-                  <span> experienced in building full-stack machine learning applications using big data. I'm proficient in every step of the </span>
+                  <span> capable of extracting actionable insights from big data. And I'm a </span>
 
                   <span id='third_placeholder'>_</span>
 
                   <span style={{color: theme.mode === 'light' ? 'black' : '#eeeeee'}}>
                     <TypeIt
                       getBeforeInit={(instance) => {
-                        instance.type("").pause(3200).exec(() => {document.getElementById('third_placeholder').style.display = 'none'}).type("machine learning");
+                        instance.type("").pause(3200).exec(() => {document.getElementById('third_placeholder').style.display = 'none'}).type("machine learning engineer");
                         return instance;
                       }}
                       options={{
@@ -189,7 +242,7 @@ class Overview extends React.Component{
                       }}/>
                   </span>
                   
-                  <span> pipeline, from data collection and preprocessing to model deployment and maintenance.
+                  <span> adept at the full machine pipeline, from data collection and preprocessing to model deployment and maintenance.
                   </span>
                 </p>
 

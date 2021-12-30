@@ -40,7 +40,28 @@ class Skills extends React.Component{
         <MyNavbar />
         {
           this.state.width < 750?
-          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px"}}>
+          <div style={{paddingLeft:"2.7em", paddingRight:"3.5em", marginTop:"100px", marginBottom:'40px'}}>
+
+            <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
+              <h4 style={{fontSize:"6vw"}}>General Programming</h4>
+              {
+                theme.mode == 'dark'?
+                <hr style={{borderTop:'1px solid #3d3d3d'}} />
+                :
+                <hr style={{borderTop:'1px solid #d4d4d4'}} />
+              }
+              <ul className="mobileUL" style={{float:"left"}}>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+              <ul className="mobileUL" style={{float:"right"}}>
+                <li>Git</li>
+                <li>AWS</li>
+                <li>Docker</li>
+              </ul>
+            </div>
             
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
               <h4 style={{fontSize:"6vw"}}>Machine Learning / Data Science</h4>
@@ -72,7 +93,7 @@ class Skills extends React.Component{
             </div>
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Other</h4>
+              <h4 style={{fontSize:"6vw"}}>Web Development</h4>
               {
                 theme.mode == 'dark'?
                 <hr style={{borderTop:'1px solid #3d3d3d'}} />
@@ -80,26 +101,60 @@ class Skills extends React.Component{
                 <hr style={{borderTop:'1px solid #d4d4d4'}} />
               }
               <ul className="mobileUL" style={{float:"left"}}>
-                <li>Java</li>
-                <li>HTML/CSS</li>
-                <li>Javascript</li>
-                <li>RESTful APIs</li>
-                <li>CI/CD</li>
-                <li>AWS</li>
+                  <li>HTML / CSS</li>
+                  <li>jQuery</li>
+                  <li>React</li>
+                  <li>Flask</li>
+                  <li>Bootstrap</li>
               </ul>
               <ul className="mobileUL" style={{float:"right"}}>
-                <li>Heroku</li>
-                <li>Bootstrap</li>
                 <li>Semantic UI</li>
-                <li>Leaflet</li>
-                <li>Flask</li>
-                <li>jQuery</li>
+                <li>RESTFUL APIs</li>
+                <li>Heroku</li>
+                <li>CI / CD</li>
               </ul>
             </div>
 
           </div>
           :
-          <div style={{width:'80vw', margin:'0 auto'}}>
+          <div style={{width:'80vw', margin:'0 auto', marginBottom:'80px'}}>
+
+            <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
+              <div>
+                <h1 style={{float:"left"}}>General Programming</h1>
+                <br/>
+                <br/>
+                {
+                  theme.mode == 'dark'?
+                  <hr style={{borderTop:'1px solid #3d3d3d', width: '75vw'}} />
+                  :
+                  <hr style={{borderTop:'1px solid #d4d4d4', width: '75vw'}} />
+                }
+                <div style={{fontSize:'20px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>Python</li>
+                    <li>Java</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>Git</li>
+                    <li>AWS</li>
+                  </ul>
+
+                  <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
+                    <li>Docker</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <br/>
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
@@ -141,23 +196,6 @@ class Skills extends React.Component{
                     <li>GCP</li>
                     <li>Jupyter</li>
                   </ul>
-                  
-
-                  {/* Python &nbsp;&nbsp;&nbsp;
-                  NumPy &nbsp;&nbsp;&nbsp;
-                  Pandas &nbsp;&nbsp;&nbsp;
-                  Scikit-learn &nbsp;&nbsp;&nbsp;
-                  TensorFlow &nbsp;&nbsp;&nbsp;
-                  Keras &nbsp;&nbsp;&nbsp;
-                  PySpark &nbsp;&nbsp;&nbsp;
-                  Matplotlib &nbsp;&nbsp;&nbsp;
-                  Seaborn &nbsp;&nbsp;&nbsp;
-                  Plotly &nbsp;&nbsp;&nbsp;
-                  OpenCV &nbsp;&nbsp;&nbsp;
-                  Jupyter &nbsp;&nbsp;&nbsp;
-                  SQL &nbsp;&nbsp;&nbsp;
-                  AWS &nbsp;&nbsp;&nbsp;
-                  GCP &nbsp;&nbsp;&nbsp; */}
                 </div>
 
               </div>
@@ -166,7 +204,7 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left"}}>Other</h1>
+                <h1 style={{float:"left"}}>Web Development</h1>
                 <br/>
                 <br/>
                 {/* <hr style={{borderTop:'1px solid #3d3d3d', width:'75vw'}}/> */}
@@ -180,16 +218,14 @@ class Skills extends React.Component{
 
                   <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
                     <li>HTML / CSS</li>
-                    <li>Javascript</li>
-                    <li>PHP</li>
                     <li>jQuery</li>
+                    <li>React</li>
                   </ul>
 
                   <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
-                    <li>React.js</li>
+                    <li>Flask</li>
                     <li>Bootstrap</li>
                     <li>Semantic UI</li>
-                    <li>Flask</li>
                   </ul>
 
                   <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
@@ -198,26 +234,9 @@ class Skills extends React.Component{
                     <li>CI / CD</li>
                   </ul>
 
-                  {/* Java &nbsp;&nbsp;&nbsp;
-                  HTML/CSS &nbsp;&nbsp;&nbsp;
-                  Javascript &nbsp;&nbsp;&nbsp;
-                  PHP &nbsp;&nbsp;&nbsp;
-                  RESTful APIs &nbsp;&nbsp;&nbsp;
-                  CI/CD &nbsp;&nbsp;&nbsp;
-                  Heroku &nbsp;&nbsp;&nbsp;
-                  AWS &nbsp;&nbsp;&nbsp;
-                  Flask &nbsp;&nbsp;&nbsp;
-                  React.js &nbsp;&nbsp;&nbsp;
-                  Bootstrap &nbsp;&nbsp;&nbsp;
-                  Semantic UI &nbsp;&nbsp;&nbsp;
-                  Leaflet &nbsp;&nbsp;&nbsp;
-                  jQuery &nbsp;&nbsp;&nbsp; */}
-
                 </div>
               </div>
             </div>
-
-            {/* <div style={{height:'30px', width:'30px', bottom:'0', borderRadius:'6px', right:'0', backgroundColor:'red', position:'absolute', margin:'0 10px 10px 0'}}></div> */}
 
             {
               theme.mode == 'dark'?
