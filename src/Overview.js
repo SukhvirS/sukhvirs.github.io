@@ -80,7 +80,7 @@ class Overview extends React.Component{
                   
                   <a href="mailto:sukhvir23singh@gmail.com">
                     <div id='email_btn_dark' style={{width:'100%', margin:'6px 0'}}>
-                        <span id='email_label_dark' style={{color: 'grey'}}>Email</span>
+                        <span id='email_label_dark'>Email</span>
                         <span id='email_reveal_dark'>Email</span>
                         <div id='email_image_dark'></div>                      
                     </div>
@@ -88,7 +88,7 @@ class Overview extends React.Component{
 
                   <a href='https://www.linkedin.com/in/sukhvir-singh-62ba48121/' target='_blank' rel="noopener noreferrer">
                     <div id='linkedin_btn_dark' style={{width:'100%', margin:'0 0 6px 0'}}>
-                      <span id='linkedin_label_dark' style={{color:'grey'}}>LinkedIn</span>
+                      <span id='linkedin_label_dark'>LinkedIn</span>
                       <span id='linkedin_reveal_dark'>LinkedIn</span>
                       <div id='linkedin_image_dark' />
                     </div>
@@ -96,7 +96,7 @@ class Overview extends React.Component{
 
                   <a href='https://github.com/SukhvirS' target='_blank' rel="noopener noreferrer">
                     <div id='github_btn_dark' style={{width:'100%', margin:'0 0 20px 0'}}>
-                        <span id='github_label_dark' style={{color:'grey'}}>GitHub</span>
+                        <span id='github_label_dark'>GitHub</span>
                         <span id='github_reveal_dark'>GitHub</span>
                         <div id='github_image_dark' />
                       </div>
@@ -228,7 +228,7 @@ class Overview extends React.Component{
                         </div>
                     </a>
                   </div>
-                  
+
                   <BlueLogo />
 
                 </div>
