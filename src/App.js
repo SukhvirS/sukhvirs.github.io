@@ -7,6 +7,7 @@ import Experience from './Experience';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import './app.css';
 // import Courses from './Courses';
+import Page404 from './Page404';
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
                 <Route path="/skills" component={Skills}></Route>
                 <Route path="/experience" component={Experience}></Route>
                 {/* <Route path="/courses" component={Courses}></Route> */}
+                <Route component={Page404} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
