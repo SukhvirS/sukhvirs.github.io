@@ -79,6 +79,7 @@ class Page404 extends React.Component {
             :
             <RedLogo />
           }
+          
 
         </div>
       </div>
