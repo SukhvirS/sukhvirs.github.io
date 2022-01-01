@@ -113,7 +113,7 @@ class MyNavbar extends React.Component{
                     </li>
 
                     {/* Courses */}
-                    <li style={{marginLeft:"-1.5em"}}>
+                    {/* <li style={{marginLeft:"-1.5em"}}>
                     {
                       window.location.href.indexOf("courses") > -1 ?
                       <Link className="nav-link" to="/courses" style={{color: theme.mode === 'light' ? 'black' : 'white', margin:"0 0 0 48px"}}>
@@ -124,7 +124,7 @@ class MyNavbar extends React.Component{
                         C O U R S E S
                     </Link>
                     }
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </header>
@@ -189,8 +189,8 @@ class MyNavbar extends React.Component{
                         }
                       </li>
 
-                      {/* Experience */}
-                      <li className="nav-item" style={{margin:"0 .5em"}}>
+                      {/* Courses */}
+                      {/* <li className="nav-item" style={{margin:"0 .5em"}}>
                         {
                           window.location.href.indexOf("courses") > -1 ?
                           <Link className="nav-link" to="/courses" style={{color:theme.mode === 'light' ? 'black' : 'white'}}>
@@ -201,7 +201,7 @@ class MyNavbar extends React.Component{
                             COURSES
                           </Link>
                         }
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

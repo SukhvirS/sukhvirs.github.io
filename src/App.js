@@ -6,7 +6,7 @@ import Skills from './Skills';
 import Experience from './Experience';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import './app.css';
-import Courses from './Courses';
+// import Courses from './Courses';
 
 class App extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class App extends React.Component {
                 <Route exact path="/" component={Overview}></Route>
                 <Route path="/skills" component={Skills}></Route>
                 <Route path="/experience" component={Experience}></Route>
-                <Route path="/courses" component={Courses}></Route>
+                {/* <Route path="/courses" component={Courses}></Route> */}
               </Switch>
             </CSSTransition>
           </TransitionGroup>
