@@ -72,12 +72,12 @@ self.__precacheManifest = [
     "url": "/static/media/CircularStd-Book.6365c40a.otf"
   },
   {
-    "revision": "c83fdd1f674aca68d3491795e46b1c2a",
-    "url": "/static/media/black_arrow.c83fdd1f.png"
-  },
-  {
     "revision": "2b6901cb2076e69421d08f66f7aa843a",
     "url": "/static/media/white_arrow.2b6901cb.png"
+  },
+  {
+    "revision": "c83fdd1f674aca68d3491795e46b1c2a",
+    "url": "/static/media/black_arrow.c83fdd1f.png"
   },
   {
     "revision": "d97936e76fbd3f698c80fc419843aca4",
