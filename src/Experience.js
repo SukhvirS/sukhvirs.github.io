@@ -41,6 +41,7 @@ class Experience extends React.Component{
       yelpRecommenderOpen: false,
       ssaiCollapse: false,
       abstractReasoningCollapse: false,
+      unoaiCollapse: false
     };
     
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -53,6 +54,7 @@ class Experience extends React.Component{
     this.toggleSSAICollapse = this.toggleSSAICollapse.bind(this);
     this.toggleAbstractReasoningCollapse = this.toggleAbstractReasoningCollapse.bind(this);
     this.getInitialTheme = this.getInitialTheme.bind(this);
+    this.toggleUnoaiCollapse = this.toggleUnoaiCollapse.bind(this);
   }
 
   componentDidMount() {
@@ -121,6 +123,12 @@ class Experience extends React.Component{
     return savedTheme ? JSON.parse(savedTheme) : {mode:'light'}
   }
 
+  toggleUnoaiCollapse(){
+    this.setState({
+      unoaiCollapse: !this.state.unoaiCollapse
+    })
+  }
+
 
   render(){
     const theme = this.getInitialTheme();
@@ -137,6 +145,32 @@ class Experience extends React.Component{
               :
               <hr style={{borderTop:'1px solid #d4d4d4', marginBottom:'-10px'}} />
             }
+
+            {/* Uno.ai */}
+            <div style={{display:"flex", margin:"10px 0 0 0"}}>
+              <div style={{width:"100vw", margin:"1em 0 0 0"}} data-toggle="collapse" href="#collapseUnoai" onClick={this.toggleUnoaiCollapse}>
+                <div style={{float:"left", width:"60%"}}>
+                  <ul style={{listStyleType:"none", padding:"0"}}>
+                    <li><h1 style={{float:"left", width:"100%", fontSize:"6vw"}}>ML Engineer</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Uno.ai</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%", fontSize:"4vw"}}>Feb 2022 - <i>present</i></h4></li>
+                  </ul>
+                </div>
+
+                {
+                  this.state.ssaiCollapse ?
+                  <img src={up} alt="Up" width="30px" style={{float:"right"}}/>
+                  :
+                  <img src={down} alt="Down" width="30px" style={{float:"right"}}/>
+                }
+              </div>
+            </div>
+            <div>
+              <div style={{fontSize:"4vw"}} className="collapse" id="collapseUnoai">
+                {/* <hr style={{borderTop:"1px solid #aaa"}}/> */}
+                ...
+              </div>
+            </div>
 
 
             {/* SSAI */}
@@ -589,6 +623,21 @@ class Experience extends React.Component{
                   :
                   <hr style={{borderTop:'1px solid #d4d4d4', width: '76vw'}} />
                 }
+
+                {/* Unoai */}
+                <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>
+                  <ul style={{listStyleType:"none"}}>
+                    <li><h1 style={{float:"left", width:"100%"}}>ML Engineer</h1></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Uno.ai</h4></li>
+                    <li><h4 style={{float:"left", color:"gray", width:"100%"}}>Feb 2022 - <i>present</i></h4></li>
+                  </ul>
+                </div>
+                <div style={{float:"right", width:"56%", textAlign:"left"}}>
+                  <p style={{fontSize:"20px"}}>
+                    ...
+                  </p>
+                </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
 
                 {/* SSAI */}
                 <div style={{float:"left", width:"40%", marginLeft:'-14px'}}>

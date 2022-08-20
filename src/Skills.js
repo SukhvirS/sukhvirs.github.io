@@ -60,6 +60,7 @@ class Skills extends React.Component{
                 <li>Git</li>
                 <li>AWS</li>
                 <li>Docker</li>
+                <li>Kubernetes</li>
               </ul>
             </div>
             
@@ -93,7 +94,7 @@ class Skills extends React.Component{
             </div>
 
             <div style={{overflow:"auto", paddingBottom:"1.5em"}}>
-              <h4 style={{fontSize:"6vw"}}>Web Development</h4>
+              <h4 style={{fontSize:"6vw"}}>Full Stack</h4>
               {
                 theme.mode == 'dark'?
                 <hr style={{borderTop:'1px solid #3d3d3d'}} />
@@ -149,6 +150,7 @@ class Skills extends React.Component{
 
                   <ul style={{listStyleType:'none', padding:'0', margin:'0', color:'gray'}}>
                     <li>Docker</li>
+                    <li>Kubernetes</li>
                   </ul>
                 </div>
 
@@ -204,7 +206,7 @@ class Skills extends React.Component{
 
             <div style={{display:"flex", justifyContent:"center", margin:"1em 0"}}>
               <div>
-                <h1 style={{float:"left"}}>Web Development</h1>
+                <h1 style={{float:"left"}}>Full Stack</h1>
                 <br/>
                 <br/>
                 {/* <hr style={{borderTop:'1px solid #3d3d3d', width:'75vw'}}/> */}
